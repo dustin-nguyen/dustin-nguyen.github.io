@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Duc Nguyen Portfolio Webpage with React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
