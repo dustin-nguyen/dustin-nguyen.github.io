@@ -11,8 +11,7 @@ import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
-    <main>
-      hello world
+    <main className='text-gray-400 bg-gray-900 body-front'>
       <Navbar />
       <About />
       <Projects />
