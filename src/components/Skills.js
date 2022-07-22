@@ -10,7 +10,7 @@ export default function Skills() {
     <section id="skills">
       <div className="container px-10 py-20 mx-auto">
         <div className="mb-20">
-          {/* <ChipIcon className="w-10 inline-block mb-4" /> */}
+          {/* <Icon icon="iwwa:settings" className="w-10 inline-block mb-4" /> */}
           <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
             Skills &amp; Technologies
           </h1>
