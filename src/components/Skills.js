@@ -14,6 +14,8 @@ export default function Skills() {
             {" "}
             <Icon
               icon="iwwa:settings"
+              width="30"
+              height="30"
               className="w-10 inline-block mb-4  mx-auto"
             />
           </div>
