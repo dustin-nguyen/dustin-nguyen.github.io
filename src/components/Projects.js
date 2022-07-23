@@ -5,6 +5,35 @@ import React from "react";
 import { projects } from "../data";
 import { Icon } from "@iconify/react";
 
+function RenderDemoLink(props) {
+  if (props.demo !== null && props.demo !== "" && props.demo !== undefined)
+    return (
+      <a
+        href={props.demo}
+        className="mx-auto text-white title-font font-medium underline hover:text-green-500"
+      >
+        Try it
+      </a>
+    );
+}
+
+function RenderGitHubLink(props) {
+  if (
+    props.github !== null &&
+    props.github !== "" &&
+    props.github !== undefined
+  )
+    return (
+      <a href={props.github}>
+        {" "}
+        <Icon
+          icon="eva:github-outline"
+          className=" mx-auto inline-block w-6 h-6 flex-shrink-0 text-white hover:text-cyan-500"
+        />
+      </a>
+    );
+}
+
 export default function Projects() {
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
@@ -39,13 +68,26 @@ export default function Projects() {
                   src={project.image}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row ">
+                    <div className="flex items-center justify-between">
+                      <Icon
+                        icon="bi:folder-fill"
+                        className="mx-auto inline-block w-6 h-6 flex-shrink-0  hover:text-white"
+                      />
+                    </div>
+                    <div className="flex justify-end flex-1  ">
+                      <RenderGitHubLink github={project.github} />
+                    </div>
+                  </div>
+
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                     {project.subtitle}
                   </h2>
                   <h1 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}
                   </h1>
-                  <p className="leading-relaxed">{project.description}</p>
+                  <p className="leading-relaxed mb-3">{project.description}</p>
+                  <RenderDemoLink demo={project.demo} />
                 </div>
               </div>
             </a>

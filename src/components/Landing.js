@@ -11,14 +11,13 @@ export default function Landing() {
           {/* <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
       Duc Nguyen.
     </h2> */}
-          <h3 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white display:inline-block">
+          {/* <h3 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white display:inline-block">
             "Climb High, Climb Far, Your Goal the Sky, Your Aim the Star." -
             Williams College
-          </h3>
+          </h3> */}
           <p className="mb-8 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-            Laborum, voluptas natus?
+            "Climb High, Climb Far, Your Goal the Sky, Your Aim the Star." -
+            Williams College
           </p>
           <div className="flex justify-center">
             <a

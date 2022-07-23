@@ -11,12 +11,14 @@ export let skills = [
 
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: "Speech To Text",
+    subtitle: "FERN Stack ",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Constructing an online website with the ability to recognize the voice and translate speech to text in order to assist people with hearing problems.",
     image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://github.com/dustin-nguyen/Speech-to-text",
+    demo: "https://duc-nguyen-speech-to-text.herokuapp.com",
+    github: "https://github.com/dustin-nguyen/Speech-to-text",
   },
   {
     title: "React Tracks",
