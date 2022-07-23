@@ -15,7 +15,7 @@ export const projects = [
     subtitle: "FERN Stack ",
     description:
       "Constructing an online website with the ability to recognize the voice and translate speech to text in order to assist people with hearing problems.",
-    image: "./project-1.gif",
+    image: "./speech-to-text.png",
     link: "https://github.com/dustin-nguyen/Speech-to-text",
     demo: "https://duc-nguyen-speech-to-text.herokuapp.com",
     github: "https://github.com/dustin-nguyen/Speech-to-text",

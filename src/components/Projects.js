@@ -10,9 +10,9 @@ function RenderDemoLink(props) {
     return (
       <a
         href={props.demo}
-        className="mx-auto text-white title-font font-medium underline hover:text-green-500"
+        className="mx-auto text-white title-font font-medium bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-800 rounded "
       >
-        Try it
+        TRY IT NOW
       </a>
     );
 }
