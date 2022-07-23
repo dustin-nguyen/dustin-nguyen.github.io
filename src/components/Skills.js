@@ -9,9 +9,16 @@ export default function Skills() {
   return (
     <section id="skills">
       <div className="container px-10 py-20 mx-auto">
-        <div className="mb-20">
-          {/* <Icon icon="iwwa:settings" className="w-10 inline-block mb-4" /> */}
-          <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
+        <div className="mb-20 ">
+          <div className="flex">
+            {" "}
+            <Icon
+              icon="iwwa:settings"
+              className="w-10 inline-block mb-4  mx-auto"
+            />
+          </div>
+
+          <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4  text-center">
             Skills &amp; Technologies
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
