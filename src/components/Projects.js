@@ -56,18 +56,9 @@ export default function Projects() {
         </div>
         <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
-            <a
-              href={project.link}
-              key={project.image}
-              className="sm:w-1/2 w-100 p-4"
-            >
+            <a href={project.link} className="sm:w-1/2 w-100 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={project.image}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-60 hover:opacity-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
                   <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row ">
                     <div className="flex items-center justify-between">
                       <Icon

@@ -21,12 +21,14 @@ export const projects = [
     github: "https://github.com/dustin-nguyen/Speech-to-text",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "Learning Gate",
+    subtitle: "MERN Stack",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Constructing an online learning website to assist students in learning asynchronous courses during the pandemic and distant learning.",
     image: "./project-2.gif",
-    link: "https://reedbarger.com",
+    link: "https://github.com/dustin-nguyen/Learning-Gate",
+    demo: "",
+    github: "https://github.com/dustin-nguyen/Learning-Gate",
   },
   {
     title: "DevChat",
