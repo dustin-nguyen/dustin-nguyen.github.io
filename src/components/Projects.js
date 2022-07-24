@@ -5,19 +5,41 @@ import React from "react";
 import { projects } from "../data";
 import { Icon } from "@iconify/react";
 
-function RenderDemoLink(props) {
-  if (props.demo !== null && props.demo !== "" && props.demo !== undefined)
-    return (
-      <a
-        href={props.demo}
-        className="mx-auto text-white title-font font-medium bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-800 rounded "
-      >
-        TRY IT NOW
-      </a>
-    );
+function checkNullOrUndefined(props) {
+  if (props === null || props === undefined || props === "") return false;
+  return true;
 }
 
-function RenderGitHubLink(props) {
+function RenderProjectButton(props) {
+  if (checkNullOrUndefined(props.demo))
+    return <RenderDemoButton demo={props.demo} />;
+  if (checkNullOrUndefined(props.github))
+    return <RenderGitHubButton github={props.github} />;
+}
+
+function RenderDemoButton(props) {
+  return (
+    <a
+      href={props.demo}
+      className=" mx-auto  text-white title-font font-medium bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-800 rounded "
+    >
+      TRY IT NOW
+    </a>
+  );
+}
+
+function RenderGitHubButton(props) {
+  return (
+    <a
+      href={props.github}
+      className="mx-auto   text-white title-font font-medium bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-800 rounded "
+    >
+      GitHub Link
+    </a>
+  );
+}
+
+function RenderGitHubIcon(props) {
   if (
     props.github !== null &&
     props.github !== "" &&
@@ -54,11 +76,11 @@ export default function Projects() {
             fuga dolore.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap -m-4 items-stretch">
           {projects.map((project) => (
-            <a href={project.link} className="sm:w-1/2 w-100 p-4">
+            <a href={project.link} className="sm:w-1/2 w-100 p-4 inline-flex">
               <div className="flex relative">
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-60 hover:opacity-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-60 hover:opacity-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 h-full">
                   <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row ">
                     <div className="flex items-center justify-between">
                       <Icon
@@ -67,7 +89,7 @@ export default function Projects() {
                       />
                     </div>
                     <div className="flex justify-end flex-1  ">
-                      <RenderGitHubLink github={project.github} />
+                      <RenderGitHubIcon github={project.github} />
                     </div>
                   </div>
 
@@ -78,7 +100,10 @@ export default function Projects() {
                     {project.title}
                   </h1>
                   <p className="leading-relaxed mb-3">{project.description}</p>
-                  <RenderDemoLink demo={project.demo} />
+                  <RenderProjectButton
+                    demo={project.demo}
+                    github={project.github}
+                  />
                 </div>
               </div>
             </a>

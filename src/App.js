@@ -11,7 +11,7 @@ import Landing from "./components/Landing";
 
 function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-front">
+    <main className="text-gray-400 bg-gray-900 body-front flex-col">
       <Navbar />
       <Landing />
       <About />

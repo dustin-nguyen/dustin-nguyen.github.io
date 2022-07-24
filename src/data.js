@@ -31,19 +31,44 @@ export const projects = [
     github: "https://github.com/dustin-nguyen/Learning-Gate",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: "Movie Recommendation System",
+    subtitle: "Pyspark, Cherrypy, Flask, Hadoop",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Applied ALS (alternating least squares) as a machine learning model to build a movie recommendation system based on the Collaborative filtering method.",
     image: "./project-3.gif",
-    link: "https://jsbootcamp.com",
+    link: "https://github.com/dustin-nguyen/Movie-recomendation",
+    demo: "",
+    github: "https://github.com/dustin-nguyen/Movie-recomendation",
   },
   {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
+    title: "BuyMe",
+    subtitle: "HTML, CSS, JDBC, SQL",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Fabricating eBay website which has the ability to add products and user can sell their item, buy items or join the auction for a product.",
     image: "./project-4.gif",
-    link: "https://pythonbootcamp.com",
+    link: "https://github.com/dustin-nguyen/Buyme",
+    demo: "",
+    github: "https://github.com/dustin-nguyen/Buyme",
+  },
+  {
+    title:
+      "Blockchain and Docker Assisted Secure Automated Parking Garage System",
+    subtitle: "MERN Stack, Python, SQLite",
+    description:
+      "Applying plate recognition to increase security and developing combination parking for customers to reduce parking fee money.",
+    image: "./project-4.gif",
+    link: "https://github.com/minhluanlqd/Software_Project_G4",
+    demo: "",
+    github: "https://github.com/minhluanlqd/Software_Project_G4",
+  },
+  {
+    title: "Mobile Application for Speech Therapy",
+    subtitle: "Flutter, Firebase, ASR",
+    description:
+      "Using NLP and machine learning to create a mobile app can create a virtual classroom for the teacher to teach the kid how to pronounce words.",
+    image: "./project-4.gif",
+    link: "https://github.com/dustin-nguyen/MAST",
+    demo: "",
+    github: "https://github.com/dustin-nguyen/MAST",
   },
 ];
