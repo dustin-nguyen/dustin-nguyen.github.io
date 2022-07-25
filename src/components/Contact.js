@@ -101,8 +101,10 @@ export default function Contact() {
             </a>
           </li>
         </ul>
-        <div>Inspired by freecodecamp.org</div>
-        <div> Built by Duc Nguyen</div>
+        <div className="item-center text-center">
+          Inspired by freecodecamp.org
+        </div>
+        <div className="item-center text-center"> Built by Duc Nguyen</div>
       </div>
     </section>
   );
