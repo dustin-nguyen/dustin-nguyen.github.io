@@ -70,7 +70,7 @@ export default function Contact() {
       </div>
       <div className="item-center flex justify-center align-center h-auto min-h-70 flex-col text-center p-3.5 pb-10">
         <ul className="container flex justify-between item-center w-1/4 m-auto">
-          <li className="  mb-4">
+          <li className=" mx-1 mb-4">
             <a href="https://github.com/dustin-nguyen">
               <Icon
                 icon="iconoir:github-outline"
@@ -80,7 +80,7 @@ export default function Contact() {
               />
             </a>
           </li>
-          <li className="  mb-4">
+          <li className="mx-1  mb-4">
             <a href="https://www.linkedin.com/in/duchn/">
               <Icon
                 icon="akar-icons:linkedin-box-fill"
@@ -90,7 +90,7 @@ export default function Contact() {
               />
             </a>
           </li>
-          <li className="  mb-4">
+          <li className="mx-1 mb-4">
             <a href="mailto:ducnrg@gmail.com">
               <Icon
                 icon="clarity:email-solid"

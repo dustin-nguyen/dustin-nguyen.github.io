@@ -86,7 +86,8 @@ export const projects = [
   {
     title: "Monopoly",
     subtitle: "Java",
-    description: "Rebuilding the classic Monopoly game by using Java.",
+    description:
+      "Do you like Monopoly? Let's try my version of the most iconic game with friend. Rebuilding the classic Monopoly game by using Java.",
     image: "./project-4.gif",
     link: "https://github.com/dustin-nguyen/monopoly",
     demo: "",
@@ -95,7 +96,8 @@ export const projects = [
   {
     title: "Racing Game",
     subtitle: "C#, Unity",
-    description: "Creating a racing game which allows user vs AI car.",
+    description:
+      "Are you the king of race? Come alone and build your dream car to race with us. Creating a racing game which allows user vs AI car.",
     image: "./project-4.gif",
     link: "https://github.com/dustin-nguyen/Racing-Game",
     demo: "",
