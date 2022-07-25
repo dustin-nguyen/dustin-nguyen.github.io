@@ -57,15 +57,15 @@ export default function Contact() {
           </p>
 
           <a
-            href="https://google.com"
+            href="mailto:ducnrg@gmail.com"
             className="text-white text-center bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
           >
-            Submit
+            Get in Touch
           </a>
         </form>
       </div>
-      <div className="item-center flex justify-center align-center h-auto min-h-70 flex-col text-center p-3.5">
-        <ul className="container flex justify-between item-center w-1/3 m-auto">
+      <div className="item-center flex justify-center align-center h-auto min-h-70 flex-col text-center p-3.5 pb-10">
+        <ul className="container flex justify-between item-center w-1/4 m-auto">
           <li className="  mb-4">
             <a href="https://github.com/dustin-nguyen">
               <Icon
@@ -86,7 +86,19 @@ export default function Contact() {
               />
             </a>
           </li>
+          <li className="  mb-4">
+            <a href="mailto:ducnrg@gmail.com">
+              <Icon
+                icon="clarity:email-solid"
+                width="40"
+                height="40"
+                className="opacity-60 transition ease-in-out  hover:opacity-100 hover:-translate-y-1 hover:scale-125 text-white hover:text-green-400"
+              />
+            </a>
+          </li>
         </ul>
+        <div>Inspired by freecodecamp.org</div>
+        <div> Built by Duc Nguyen</div>
       </div>
     </section>
   );

@@ -7,6 +7,18 @@ export let skills = [
   "React",
   "R",
   "Python",
+  "CSS",
+  "Hadoop",
+  "Git/ GitHub",
+  "Scala",
+  "pySpark",
+  "SQL",
+  "NoSQL",
+  "Haskell",
+  "JUnit5",
+  "Express",
+  "NodeJs",
+  "SQLite",
 ];
 
 export const projects = [
