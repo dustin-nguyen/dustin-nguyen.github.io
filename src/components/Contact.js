@@ -52,8 +52,9 @@ export default function Contact() {
             Contact Me
           </h2>
           <p className="leading-relaxed mb-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
+            I'm currently looking for a Software Engineering position in the
+            United State so If you have / know any open position in the Software
+            Engineering field, feel free to contact me.
           </p>
 
           <a

@@ -83,4 +83,22 @@ export const projects = [
     demo: "",
     github: "https://github.com/dustin-nguyen/MAST",
   },
+  {
+    title: "Monopoly",
+    subtitle: "Java",
+    description: "Rebuilding the classic Monopoly game by using Java.",
+    image: "./project-4.gif",
+    link: "https://github.com/dustin-nguyen/monopoly",
+    demo: "",
+    github: "https://github.com/dustin-nguyen/monopoly",
+  },
+  {
+    title: "Racing Game",
+    subtitle: "C#, Unity",
+    description: "Creating a racing game which allows user vs AI car.",
+    image: "./project-4.gif",
+    link: "https://github.com/dustin-nguyen/Racing-Game",
+    demo: "",
+    github: "https://github.com/dustin-nguyen/Racing-Game",
+  },
 ];
