@@ -17,32 +17,28 @@ export default function Contact() {
             marginHeight={0}
             marginWidth={0}
             style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=Rutgers+New+Brunswick+Engineering&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            src="https://www.google.com/maps/embed/v1/place?q=New+Jersey&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
           <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1">
-                98 Brett Rd, <br />
-                Piscataway, NJ 08854
-              </p>
+              <p className="mt-1">New Jersey, USA</p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a
-                href="mailto:ducnrg@gmail.com"
-                className="text-indigo-400 leading-relaxed"
-              >
-                ducnrg@email.com
+              <a href="mailto" className="text-indigo-400 leading-relaxed">
+                <div className="">
+                  <img
+                    className="object-cover object-center rounded"
+                    alt="email-pic"
+                    src="./email.PNG"
+                  />
+                </div>
               </a>
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
-                PHONE
-              </h2>
-              <p className="leading-relaxed">949-372-9122</p>
             </div>
           </div>
         </div>
@@ -61,7 +57,7 @@ export default function Contact() {
           </p>
 
           <a
-            href="mailto:ducnrg@gmail.com"
+            href="mailto:"
             className="text-white text-center bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
           >
             Get in Touch
@@ -91,7 +87,7 @@ export default function Contact() {
             </a>
           </li>
           <li className="mx-1 mb-4">
-            <a href="mailto:ducnrg@gmail.com">
+            <a href="mailto">
               <Icon
                 icon="clarity:email-solid"
                 width="40"
