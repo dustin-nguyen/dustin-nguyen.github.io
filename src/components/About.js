@@ -2,6 +2,117 @@
 
 import { Icon } from "@iconify/react";
 
+function RenderHobbies() {
+  return (
+    <ul className="list-none mb-8">
+      <div className="tracking-widest text-base title-font font-medium text-green-400 mb-2">
+        Hobbies:
+      </div>
+      <li className="mb-2 ml-4 font-normal items-center">
+        <div className="flex">
+          <Icon icon="twemoji:hiking-boot" className=" w-6 h-6 mr-2" />
+          <span className="text-white">
+            <i className="fas fa-phone-alt mr-2 " />
+            Hiking
+          </span>
+        </div>
+      </li>
+      <li className="mb-2 ml-4 font-normal items-center">
+        <div className="flex">
+          <Icon icon="map:kayaking" className=" text-yellow-400 w-6 h-6 mr-2" />
+          <span className="text-white">
+            <i className="fas fa-phone-alt mr-2 " />
+            Kayaking
+          </span>
+        </div>
+      </li>
+      <li className="mb-2 ml-4 font-normal items-center">
+        <div className="flex">
+          <Icon icon="noto:person-swimming" className=" w-6 h-6 mr-2" />
+          <span className="text-white">
+            <i className="fas fa-phone-alt mr-2 " />
+            Swiming
+          </span>
+        </div>
+      </li>
+      <li className="mb-2 ml-4 font-normal items-center">
+        <div className="flex">
+          <Icon icon="emojione:badminton" className=" w-6 h-6 mr-2" />
+          <span className="text-white">
+            <i className="fas fa-phone-alt mr-2 " />
+            Badminton
+          </span>
+        </div>
+      </li>
+      <li className="mb-2 ml-4 font-normal items-center">
+        <div className="flex">
+          <Icon icon="flat-color-icons:reading" className=" w-6 h-6 mr-2" />
+          <span className="text-white">
+            <i className="fas fa-phone-alt mr-2 " />
+            Learning something new everyday
+          </span>
+        </div>
+      </li>
+    </ul>
+  );
+}
+function RenderFocus() {
+  return (
+    <ul className="list-none mb-8">
+      <div className="tracking-widest text-base title-font font-medium text-green-400 mb-2">
+        Focus:
+      </div>
+      <li className="mb-2 ml-4 font-normal items-center">
+        <div className="flex">
+          <Icon icon="icon-park-solid:database-code" className="w-6 h-6 mr-2" />
+          <span className="text-white">
+            <i className="fas fa-phone-alt mr-2 " />
+            Backend Development
+          </span>
+        </div>
+      </li>
+      <li className="mb-2 ml-4 font-normal items-center">
+        <div className="flex">
+          <Icon
+            icon="carbon:machine-learning-model"
+            className=" text-yellow-400 w-6 h-6 mr-2"
+          />
+          <span className="text-white">
+            <i className="fas fa-phone-alt mr-2 " />
+            Machine Learning
+          </span>
+        </div>
+      </li>
+      <li className="mb-2 ml-4 font-normal items-center">
+        <div className="flex">
+          <Icon icon="eos-icons:ai" className="text-cyan-500 w-6 h-6 mr-2" />
+          <span className="text-white">
+            <i className="fas fa-phone-alt mr-2 " />
+            Artifical Intelligence
+          </span>
+        </div>
+      </li>
+      <li className="mb-2 ml-4 font-normal items-center">
+        <div className="flex">
+          <Icon icon="carbon:data-vis-2" className=" w-6 h-6 mr-2" />
+          <span className="text-white">
+            <i className="fas fa-phone-alt mr-2 " />
+            Data
+          </span>
+        </div>
+      </li>
+      <li className="mb-2 ml-4 font-normal items-center">
+        <div className="flex">
+          <Icon icon="twemoji:robot" className=" w-6 h-6 mr-2" />
+          <span className="text-white">
+            <i className="fas fa-phone-alt mr-2 " />
+            Algorithms
+          </span>
+        </div>
+      </li>
+    </ul>
+  );
+}
 export default function About() {
   return (
     <section id="about">
@@ -20,41 +131,12 @@ export default function About() {
             Hello! My name is Duc Nguyen and I enjoy creating things that can
             enhance people's quality of life.
           </p>
-          <ul className="list-none">
-            <div className="tracking-widest text-base title-font font-medium text-green-400 mb-2">
-              Hobbies:
-            </div>
-            <li className="mb-2 ml-4 font-normal items-center">
-              <div className="flex">
-                <Icon icon="twemoji:hiking-boot" className=" w-6 h-6 mr-2" />
-                <span className="text-white">
-                  <i className="fas fa-phone-alt mr-2 " />
-                  Hiking
-                </span>
-              </div>
-            </li>
-            <li className="mb-2 ml-4 font-normal items-center">
-              <div className="flex">
-                <Icon
-                  icon="map:kayaking"
-                  className=" text-yellow-400 w-6 h-6 mr-2"
-                />
-                <span className="text-white">
-                  <i className="fas fa-phone-alt mr-2 " />
-                  Kayaking
-                </span>
-              </div>
-            </li>
-            <li className="mb-2 ml-4 font-normal items-center">
-              <div className="flex">
-                <Icon icon="noto:person-swimming" className=" w-6 h-6 mr-2" />
-                <span className="text-white">
-                  <i className="fas fa-phone-alt mr-2 " />
-                  Swiming
-                </span>
-              </div>
-            </li>
-          </ul>
+          <p className="mb-8 leading-relaxed">
+            I earned a Master of Science and Banchelor of Scinece degress in
+            Computer Engineering from the Rutgers University
+          </p>
+          <RenderHobbies />
+          <RenderFocus />
         </div>
         <div className="w-1/2 lg:h-1/3">
           <img
