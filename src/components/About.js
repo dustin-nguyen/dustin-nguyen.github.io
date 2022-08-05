@@ -132,7 +132,7 @@ export default function About() {
             enhance people's quality of life.
           </p>
           <p className="mb-8 leading-relaxed">
-            I earned a Master of Science and Banchelor of Scinece degress in
+            I earned a Master of Science and Banchelor of Scinece degrees in
             Computer Engineering from the Rutgers University
           </p>
           <RenderHobbies />
