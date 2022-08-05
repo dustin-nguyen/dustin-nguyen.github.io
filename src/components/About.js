@@ -138,9 +138,9 @@ export default function About() {
           <RenderHobbies />
           <RenderFocus />
         </div>
-        <div className="w-1/2 lg:h-1/3">
+        <div className="w-1/2 h-1/2 max-w-2xl">
           <img
-            className="object-cover object-center rounded"
+            className="object-contain object-center rounded "
             alt="profie-pic"
             src="./profie.jpg"
           />
