@@ -1,5 +1,7 @@
 // src/components/About.js
 
+import { Icon } from "@iconify/react";
+
 export default function About() {
   return (
     <section id="about">
@@ -18,20 +20,41 @@ export default function About() {
             Hello! My name is Duc Nguyen and I enjoy creating things that can
             enhance people's quality of life.
           </p>
-          {/* <div className="flex justify-center">
-            <a
-              href="#contact"
-              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
-            >
-              Work With Me
-            </a>
-            <a
-              href="#projects"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
-            >
-              See My Past Work
-            </a>
-          </div> */}
+          <ul className="list-none">
+            <div className="tracking-widest text-base title-font font-medium text-green-400 mb-2">
+              Hobbies:
+            </div>
+            <li className="mb-2 ml-4 font-normal items-center">
+              <div className="flex">
+                <Icon icon="twemoji:hiking-boot" className=" w-6 h-6 mr-2" />
+                <span className="text-white">
+                  <i className="fas fa-phone-alt mr-2 " />
+                  Hiking
+                </span>
+              </div>
+            </li>
+            <li className="mb-2 ml-4 font-normal items-center">
+              <div className="flex">
+                <Icon
+                  icon="map:kayaking"
+                  className=" text-yellow-400 w-6 h-6 mr-2"
+                />
+                <span className="text-white">
+                  <i className="fas fa-phone-alt mr-2 " />
+                  Kayaking
+                </span>
+              </div>
+            </li>
+            <li className="mb-2 ml-4 font-normal items-center">
+              <div className="flex">
+                <Icon icon="noto:person-swimming" className=" w-6 h-6 mr-2" />
+                <span className="text-white">
+                  <i className="fas fa-phone-alt mr-2 " />
+                  Swiming
+                </span>
+              </div>
+            </li>
+          </ul>
         </div>
         <div className="w-1/2 lg:h-1/3">
           <img
