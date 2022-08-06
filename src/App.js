@@ -5,7 +5,7 @@ import React from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
+import Projects from "./components/Project/Projects";
 import Skills from "./components/Skills";
 import Landing from "./components/Landing";
 

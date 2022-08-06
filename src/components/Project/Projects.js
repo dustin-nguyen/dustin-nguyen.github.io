@@ -2,18 +2,17 @@
 
 //import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { projects } from "../data";
+import { projects } from "../../data/data";
 import { Icon } from "@iconify/react";
 
-function checkNullOrUndefined(props) {
-  if (props === null || props === undefined || props === "") return false;
-  return true;
+export function checkInvalid(props) {
+  if (props === null || props === undefined || props === "") return true;
+  return false;
 }
 
 function RenderProjectButton(props) {
-  if (checkNullOrUndefined(props.demo))
-    return <RenderDemoButton demo={props.demo} />;
-  if (checkNullOrUndefined(props.github))
+  if (!checkInvalid(props.demo)) return <RenderDemoButton demo={props.demo} />;
+  if (!checkInvalid(props.github))
     return <RenderGitHubButton github={props.github} />;
 }
 

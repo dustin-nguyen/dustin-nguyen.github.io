@@ -3,7 +3,7 @@
 // import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import { Icon } from "@iconify/react";
 import React from "react";
-import { skills } from "../data";
+import { skills } from "../data/data";
 
 export default function Skills() {
   return (
