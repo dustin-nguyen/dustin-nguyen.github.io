@@ -21,12 +21,12 @@ export function RenderProjectButton(props) {
   );
 }
 
-export function RenderDemoButton(props) {
-  if (checkInvalid(props.demo)) {
+export function RenderDemoButton({ demo }) {
+  if (checkInvalid(demo)) {
     console.warn("No Demo Link");
     return (
       <a
-        href={props.demo}
+        href={demo}
         className=" mx-auto  text-white title-font font-medium bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-800 rounded "
       >
         No Demo Link
@@ -36,7 +36,7 @@ export function RenderDemoButton(props) {
 
   return (
     <a
-      href={props.demo}
+      href={demo}
       className=" mx-auto  text-white title-font font-medium bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-800 rounded "
     >
       TRY IT NOW
@@ -44,12 +44,12 @@ export function RenderDemoButton(props) {
   );
 }
 
-export function RenderGitHubButton(props) {
-  if (checkInvalid(props.github)) {
+export function RenderGitHubButton({ github }) {
+  if (checkInvalid(github)) {
     console.warn("No GitHub Link");
     return (
       <a
-        href={props.github}
+        href={github}
         className=" mx-auto  text-white title-font font-medium bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-800 rounded "
       >
         No GitHub Link
@@ -58,7 +58,7 @@ export function RenderGitHubButton(props) {
   }
   return (
     <a
-      href={props.github}
+      href={github}
       className="mx-auto   text-white title-font font-medium bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-800 rounded "
     >
       GitHub Link
@@ -66,10 +66,10 @@ export function RenderGitHubButton(props) {
   );
 }
 
-export function RenderGitHubIcon(props) {
-  if (!checkInvalid(props.github))
+export function RenderGitHubIcon({ github }) {
+  if (!checkInvalid(github))
     return (
-      <a href={props.github}>
+      <a href={github}>
         {" "}
         <Icon
           icon="eva:github-outline"
