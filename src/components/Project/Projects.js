@@ -10,13 +10,30 @@ export function checkInvalid(props) {
   return false;
 }
 
-function RenderProjectButton(props) {
+export function RenderProjectButton(props) {
   if (!checkInvalid(props.demo)) return <RenderDemoButton demo={props.demo} />;
   if (!checkInvalid(props.github))
     return <RenderGitHubButton github={props.github} />;
+  return (
+    <div className=" mx-auto  text-white title-font font-medium bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-800 rounded ">
+      No Link
+    </div>
+  );
 }
 
-function RenderDemoButton(props) {
+export function RenderDemoButton(props) {
+  if (checkInvalid(props.demo)) {
+    console.warn("No Demo Link");
+    return (
+      <a
+        href={props.demo}
+        className=" mx-auto  text-white title-font font-medium bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-800 rounded "
+      >
+        No Demo Link
+      </a>
+    );
+  }
+
   return (
     <a
       href={props.demo}
@@ -27,7 +44,18 @@ function RenderDemoButton(props) {
   );
 }
 
-function RenderGitHubButton(props) {
+export function RenderGitHubButton(props) {
+  if (checkInvalid(props.github)) {
+    console.warn("No GitHub Link");
+    return (
+      <a
+        href={props.github}
+        className=" mx-auto  text-white title-font font-medium bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-800 rounded "
+      >
+        No GitHub Link
+      </a>
+    );
+  }
   return (
     <a
       href={props.github}
@@ -38,12 +66,8 @@ function RenderGitHubButton(props) {
   );
 }
 
-function RenderGitHubIcon(props) {
-  if (
-    props.github !== null &&
-    props.github !== "" &&
-    props.github !== undefined
-  )
+export function RenderGitHubIcon(props) {
+  if (!checkInvalid(props.github))
     return (
       <a href={props.github}>
         {" "}
@@ -69,11 +93,6 @@ export default function Projects() {
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Apps I've Built
           </h1>
-          {/* <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
-          </p> */}
         </div>
         <div className="flex flex-wrap -m-4 items-stretch">
           {projects.map((project) => (
