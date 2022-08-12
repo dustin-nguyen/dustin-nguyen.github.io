@@ -9,3 +9,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #4ade80;
 }
+body:hover::-webkit-scrollbar-thumb {
+  background: rgb(56, 189, 246);
+}
