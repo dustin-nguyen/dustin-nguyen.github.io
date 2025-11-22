@@ -13,18 +13,11 @@ A high-performance, accessible, and responsive developer portfolio built with Re
 
 ## Setup & Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/portfolio.git
-   cd portfolio
-   ```
-
-2. **Install dependencies**
+**Install dependencies**
    ```bash
    npm install
    ```
-
-3. **Run development server**
+**Run development server**
    ```bash
    npm run dev
    ```
