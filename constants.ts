@@ -23,7 +23,7 @@ export const PROFILE_DATA: ProfileData = {
     },
     {
       platform: "LinkedIn",
-      url: "https://linkedin.com/in/dustin-nguyen-example",
+      url: "https://www.linkedin.com/in/duchn",
       icon: "Linkedin"
     }
   ],
@@ -32,9 +32,9 @@ export const PROFILE_DATA: ProfileData = {
     name: "Dustin Nguyen",
     tagline: "I build accessible, pixel-perfect, and performant web experiences.",
     description: "I'm a software engineer based in San Francisco, specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at Tech Solutions Inc.",
-    resumeUrl: "assets/resume.pdf", 
+    resumeUrl: "assets/Duc-Resume.pdf", 
     ctaText: "Check out my work",
-    heroImageUrl: "assets/hero-profile.png"
+    heroImageUrl: "assets/hero-profile.jpg"
   },
   about: {
     sectionNumber: "01.",
