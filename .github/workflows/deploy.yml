@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages (on tag)
 on:
   push:
     tags:
-      - "v*"   # any tag starting with v (v1.0.0, v2.3.1, etc.)
+      - main
 
 permissions:
   contents: write   # required to push to gh-pages branch
