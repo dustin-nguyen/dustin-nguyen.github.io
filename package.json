@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://dustin-nguyen.github.io/portfolio",
+  "homepage": "https://dustin-nguyen.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
