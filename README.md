@@ -65,6 +65,20 @@ Tailwind CSS is used for styling. Configuration is embedded in `index.html` for 
      *(Note: verify if your build output folder is `dist` or `build`)*
    - Run `npm run deploy`.
 
+## Manual Deployment
+
+Sometimes you might want to trigger a deployment manually, for example after editing files in `main` without pushing, or if the workflow didn't run automatically.
+
+### Steps to Trigger Manually
+
+1. Go to your repository on GitHub.
+2. Click on the **Actions** tab.
+3. Select the workflow **Pages build and deployment** from All workflows.
+4. Click the **Re-Run all jobs** button (top-right).
+
+GitHub will then build your project and deploy it to GitHub Pages, just like the automatic workflow.
+
+
 ## Project Structure
 
 ```
