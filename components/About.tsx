@@ -29,7 +29,6 @@ const About: React.FC = () => {
         </div>
         
         <div className="relative mx-auto md:mx-0 w-full max-w-[300px] animate-fade-in-up delay-300">
-           <div className="absolute inset-0 border-2 border-accent rounded-lg translate-x-4 translate-y-4"></div>
            <div className="relative rounded-lg overflow-hidden bg-secondary">
               <img 
                 src={about.profileImageUrl} 
