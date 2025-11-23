@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
 
             <div className="flex flex-wrap gap-6 animate-fade-in-up delay-400">
               <a
-                href="#projects"
+                href="#experience"
                 className="group flex items-center px-8 py-4 bg-transparent text-accent border border-accent rounded font-mono font-semibold hover:bg-accent/10 transition-all"
               >
                 {hero.ctaText}

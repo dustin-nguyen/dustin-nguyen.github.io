@@ -117,7 +117,7 @@ export const PROFILE_DATA: ProfileData = {
         description: [
           "Maintained and enhanced Windows MS SQL database applications, focusing on improving data integrity and system performance for internal tools.",
         ],
-        technologies: ["MS SQL", "Windows Apps", "C#"],
+        technologies: ["MS SQL", "Windows Apps"],
         logoUrl: "assets/hatchando.png",
       },
     ],
