@@ -65,6 +65,9 @@ Tailwind CSS is used for styling. Configuration is embedded in `index.html` for 
      *(Note: verify if your build output folder is `dist` or `build`)*
    - Run `npm run deploy`.
 
+### Automatic Deployment
+Thanks to the GitHub Actions workflow, **every push to the `main` branch automatically builds and deploys the site to GitHub Pages**. No additional steps are required.
+
 ## Manual Deployment
 
 Sometimes you might want to trigger a deployment manually, for example after editing files in `main` without pushing, or if the workflow didn't run automatically.
