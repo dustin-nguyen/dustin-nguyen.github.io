@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Section from './Section';
 import { PROFILE_DATA } from '../constants';
@@ -29,15 +28,14 @@ const About: React.FC = () => {
           </ul>
         </div>
         
-        <div className="relative group mx-auto md:mx-0 w-64 h-64 md:w-auto md:h-auto animate-fade-in-up delay-300">
-           <div className="absolute inset-0 border-2 border-accent rounded-lg translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
-           <div className="relative rounded-lg overflow-hidden bg-accent/20 w-full aspect-square max-w-[300px]">
+        <div className="relative mx-auto md:mx-0 w-full max-w-[300px] animate-fade-in-up delay-300">
+           <div className="absolute inset-0 border-2 border-accent rounded-lg translate-x-4 translate-y-4"></div>
+           <div className="relative rounded-lg overflow-hidden bg-secondary">
               <img 
                 src={about.profileImageUrl} 
                 alt="Profile" 
-                className="w-full h-full object-cover mix-blend-overlay group-hover:mix-blend-normal transition-all duration-300 filter grayscale group-hover:grayscale-0" 
+                className="w-full h-auto object-cover block" 
               />
-              <div className="absolute inset-0 bg-accent/20 group-hover:bg-transparent transition-colors duration-300"></div>
            </div>
         </div>
       </div>

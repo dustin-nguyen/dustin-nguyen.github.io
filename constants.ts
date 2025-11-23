@@ -193,7 +193,7 @@ export const PROFILE_DATA: ProfileData = {
     title: "Get In Touch",
     description: "I am currently looking for new opportunities. Whether you have a question, a job offer, or just want to say hi, my inbox is always open.",
     buttonText: "Say Hello",
-    email: "dustin.nguyen@example.com",
-    footerText: "Built with React, TypeScript & Tailwind. Designed & Built by Dustin Nguyen"
+    email: "ducnrg@gmail.com",
+    footerText: "Built with React, TypeScript & Tailwind. Designed & Built by Dustin Nguyen with Google AI studio"
   }
 };
