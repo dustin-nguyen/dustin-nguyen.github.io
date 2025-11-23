@@ -95,6 +95,7 @@ export interface ContactData {
   buttonText: string;
   email: string;
   footerText: string;
+  popupMessage: string;
 }
 
 export interface ProfileData {

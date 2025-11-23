@@ -43,9 +43,14 @@ const Contact: React.FC = () => {
             </button>
             
             <div className="text-center pt-2">
-              <h3 className="text-2xl font-bold text-white mb-4">Get in Touch</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
+              
+              <p className="text-lg text-slate-300 leading-relaxed mb-6">
+                {contact.popupMessage}
+              </p>
+              
               <p className="text-lg text-slate-300 leading-relaxed">
-                Hi! Please send an email to <a href={`mailto:${contact.email}`} className="text-accent font-mono hover:underline">{contact.email}</a> to get in touch.
+                Want to say hello or collaborate? Email me at <a href={`mailto:${contact.email}`} className="text-accent font-mono hover:underline">{contact.email}</a> to get in touch.
               </p>
               
               <button

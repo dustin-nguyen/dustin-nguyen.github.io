@@ -227,6 +227,7 @@ export const PROFILE_DATA: ProfileData = {
     description: "I am currently looking for new opportunities. Whether you have a question, a job offer, or just want to say hi, my inbox is always open.",
     buttonText: "Say Hello",
     email: "ducnrg@gmail.com",
+    popupMessage: "Psst… want to say hi? Drop me an email and I’ll respond faster than a coffee kick! ☕🚀 ",
     footerText: "Built with React, TypeScript & Tailwind. Designed & Built by Duc Nguyen"
   }
 };
