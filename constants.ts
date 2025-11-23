@@ -15,6 +15,7 @@ export const PROFILE_DATA: ProfileData = {
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ],
+
   socials: [
     {
       platform: "GitHub",
@@ -27,166 +28,198 @@ export const PROFILE_DATA: ProfileData = {
       icon: "Linkedin"
     }
   ],
+
   hero: {
     greeting: "Hi, my name is",
-    name: "Dustin Nguyen",
-    tagline: "I build accessible, pixel-perfect, and performant web experiences.",
-    description: "I'm a software engineer based in San Francisco, specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at Tech Solutions Inc.",
-    resumeUrl: "assets/Duc-Resume.pdf", 
-    ctaText: "Check out my work",
+    name: "Duc Nguyen",
+    tagline: "Android Developer & Software Engineer",
+    description:
+      "I’m an Android developer and software engineer specializing in building high-performance, scalable, and user-centric applications. I’ve contributed to enterprise products used by millions at Walmart Global Tech, BMW of North America, and Hatchando LTD. I focus on clean architectures, app performance optimization, and delivering impactful engineering solutions.",
+    resumeUrl: "assets/Duc-Resume.pdf",
+    ctaText: "View My Work",
     heroImageUrl: "assets/hero-profile.jpg"
   },
+
   about: {
     sectionNumber: "01.",
     title: "About Me",
     paragraphs: [
-      "I am a software engineer with a passion for building scalable web applications and crafting intuitive user experiences. With a strong foundation in modern frontend architectures and a keen eye for design, I bridge the gap between engineering and aesthetics. My approach creates software that not only functions flawlessly but feels natural to use.",
-      "My journey started when I decided to customize a Tumblr theme, and I've been hooked on web development ever since. I enjoy creating software that lives on the internet, whether that be websites, applications, or anything in between.",
-      "Here are a few technologies I’ve been working with recently:"
+      "I am a software engineer with a deep passion for building scalable web and mobile applications that delight users and improve everyday lives. I blend modern engineering practices with a strong focus on UX/UI design to create software that not only works flawlessly but feels intuitive and natural to use.",
+      "I became a software engineer because I want to create tools and applications that make people's lives easier, more productive, and more enjoyable. At Walmart Global Tech, I worked on enterprise Android platforms, optimizing performance, implementing clean modular architecture, and enhancing app stability. I also explored AI-powered automation using tools like n8n and Ollama to streamline workflows and create smarter solutions for real-world problems.",
+      "I thrive on challenges that push me to learn and innovate, whether it’s optimizing app performance, designing modular architectures, or exploring cutting-edge AI and cloud technologies. I take pride in crafting software that is reliable, performant, and a joy for users to interact with.",
+      "Here are a few technologies I’ve been exploring and working with recently:"
     ],
-    profileImageUrl: "assets/about-profile.jpg", 
+    profileImageUrl: "assets/about-profile.jpg",
     recentTechnologies: [
-      "React", 
-      "TypeScript", 
-      "Next.js", 
-      "Tailwind CSS", 
-      "Node.js", 
-      "PostgreSQL",
-      "AWS",
-      "Docker"
+      "Kotlin", "Android", "LLM", 
+      "Google AI Studio", "n8n", "ollama", "Python", "Flask"
     ]
   },
+
   experience: {
     sectionNumber: "02.",
     title: "Where I've Worked",
     jobs: [
       {
-        id: "exp-1",
-        company: "Tech Solutions Inc.",
-        role: "Senior Frontend Engineer",
-        period: "2021 — Present",
+        id: "exp-walmart",
+        company: "Walmart – Global Tech",
+        role: "Android Developer",
+        period: "Dec 2023 — Present",
         description: [
-          "Led the migration of a legacy monolithic application to a micro-frontend architecture using React and Webpack Module Federation, reducing build times by 40%.",
-          "Developed and maintained a shared component library used across 5 distinct products, ensuring UI consistency and accessibility compliance (WCAG 2.1 AA).",
-          "Mentored junior developers and conducted code reviews to maintain high code quality standards."
+          "Played a key role in developing Walmart's high-traffic local marketplace platform (Kotlin, Java, GraphQL), contributing to complex feature integration and UX/UI collaboration for an intuitive user experience; this platform is projected for $1B+ annual revenue.",
+          "Instrumental in optimizing memory management to achieve significant app performance gains, reducing crashes by 40% and enhancing responsiveness across diverse Android devices.",
+          "Engineered and implemented key aspects of a modular, clean architecture for new app functionalities, contributing to a 20% reduction in development time and improving scalability for features like media integration and AI-driven capabilities.",
+          "Actively contributed to establishing comprehensive automated testing protocols, resulting in a 30% decrease in post-release bugs and boosting overall app stability and reliability on a large scale.",
+          "Collaborated closely with UX/UI designers to implement a user-centric new design, which contributed to a 15% improvement in user satisfaction scores and enabled seamless control of app functionalities."
         ],
-        technologies: ["React", "TypeScript", "GraphQL", "AWS"],
-        logoUrl: "assets/company-1.png" 
+        technologies: ["Kotlin", "Android", "GraphQL", "Clean Architecture", "Testing", "CI/CD", "Automation testing", "R2"],
+        logoUrl: "assets/walmart-logo.svg"
       },
       {
-        id: "exp-2",
-        company: "Creative Digital Agency",
-        role: "Software Developer",
-        period: "2019 — 2021",
+        id: "exp-bmw",
+        company: "BMW of North America LLC",
+        role: "Software Developer Intern",
+        period: "Sep 2022 — Mar 2023",
         description: [
-          "Collaborated with designers to translate Figma mockups into responsive, interactive web applications for high-profile clients.",
-          "Optimized frontend performance, achieving a 95+ Lighthouse score across key landing pages.",
-          "Integrated third-party APIs (Stripe, Contentful) to enable e-commerce and dynamic content management features."
+          "Developed a key back-end system for dealer part requests; transitioned services from Spring MVC to Quarkus, significantly reducing AWS Lambda cold start times by 50%.",
+          "Executed migration of mainframe DB2 to Oracle SQL & Salesforce, achieving $50K annual savings in API costs and improving data accessibility.",
+          "Optimized an RPA bot (UiPath) for $500K in operational cost savings; built a monitoring service (Angular, Spring MVC) and implemented CI/CD (Jenkins), enhancing system reliability."
         ],
-        technologies: ["JavaScript", "React", "Sass", "Node.js"],
-        logoUrl: "assets/company-2.png" 
+        technologies: ["Spring MVC", "Quarkus", "Angular", "Oracle SQL", "Salesforce", "UiPath"],
+        logoUrl: "assets/bmw-logo.png"
       },
       {
-        id: "exp-3",
-        company: "StartUp Co.",
-        role: "Junior Web Developer",
-        period: "2018 — 2019",
+        id: "exp-hatchando",
+        company: "HATCHANDO LTD",
+        role: "Software Engineer Intern",
+        period: "May 2021 — Aug 2021",
         description: [
-          "Assisted in the development of a customer-facing dashboard using Vue.js.",
-          "Participated in agile sprints, daily stand-ups, and retrospective meetings.",
-          "Debugged and resolved cross-browser compatibility issues for IE11 and Safari."
+          "Maintained and enhanced Windows MS SQL database applications, focusing on improving data integrity and system performance for internal tools."
         ],
-        technologies: ["Vue.js", "Firebase", "Bootstrap"],
-        logoUrl: "assets/company-3.png" 
+        technologies: ["MS SQL", "Windows Apps", "C#"],
+        logoUrl: "assets/hatchando.png"
       }
     ]
   },
+
   education: {
     sectionNumber: "03.",
     title: "Education",
     items: [
       {
-        id: "edu-1",
-        school: "University of California, Berkeley",
-        degree: "B.S. Computer Science",
-        period: "2014 — 2018",
-        location: "Berkeley, CA",
-        description: "Relevant coursework: Data Structures & Algorithms, Artificial Intelligence, Database Systems, Computer Architecture. Graduated with Honors.",
-        logoUrl: "assets/school-1.png" 
+        id: "edu-ms",
+        school: "Rutgers University",
+        degree: "Master of Science in Software Engineering",
+        period: "May 2023",
+        location: "New Brunswick, NJ",
+        description: "Focused on scalable systems, cloud infrastructure, and software architecture.",
+        logoUrl: "assets/rutgers-logo.png"
       },
       {
-        id: "edu-2",
-        school: "Full Stack Academy",
-        degree: "Web Development Immersive",
-        period: "2018",
-        location: "New York, NY",
-        description: "Intensive 17-week coding bootcamp focused on the MERN stack (MongoDB, Express, React, Node.js). Built 3 full-stack projects in agile teams.",
-        logoUrl: "assets/school-2.png" 
+        id: "edu-bs",
+        school: "Rutgers University",
+        degree: "Bachelor of Science in Computer Engineering",
+        period: "May 2021",
+        location: "New Brunswick, NJ",
+        description: "Coursework included Algorithms, Operating Systems, Databases, and Computer Architecture.",
+        logoUrl: "assets/rutgers-logo.png"
       }
     ]
   },
+
   projects: {
     sectionNumber: "04.",
     title: "Some Things I've Built",
     items: [
       {
-        id: "proj-1",
-        title: "E-Commerce Dashboard",
-        description: "A comprehensive analytics dashboard for online retailers. Features real-time data visualization, inventory management, and sales reporting.",
-        imageUrl: "assets/project-1.jpg", 
-        technologies: ["React", "Recharts", "Tailwind", "Supabase"],
-        repoUrl: "https://github.com",
-        demoUrl: "https://example.com"
+        id: "proj-easychef",
+        title: "EasyChef (AI-Powered Recipe Generator)",
+        description:
+          "Developed an AI recipe generator (Python, Flask, TensorFlow, Hugging Face) processing user input via a web UI; explored efficient model deployment considerations for responsive user-facing applications.",
+        imageUrl: "assets/projects/easyChef.jpg",
+        technologies: ["Python", "Flask", "TensorFlow", "Hugging Face"],
+        repoUrl: "https://github.com/dustin-nguyen",
       },
       {
-        id: "proj-2",
-        title: "TaskMaster AI",
-        description: "A productivity application that uses AI to categorize and prioritize tasks automatically based on urgency and complexity.",
-        imageUrl: "assets/project-2.jpg", 
-        technologies: ["Next.js", "OpenAI API", "Prisma", "Postgres"],
-        repoUrl: "https://github.com",
-        demoUrl: "https://example.com"
+        id: "proj-n8n-ollama",
+        title: "AI-Powered Automation with n8n + Ollama",
+        description:
+          "Built AI-powered automation workflows using n8n and Ollama to streamline tasks, integrate multiple services, and create smarter, self-learning processes that save time and reduce manual effort.",
+        imageUrl: "assets/projects/n8n_ollama.jpg",
+        technologies: ["n8n", "Ollama", "JavaScript", "Node.js", "API Integration"],
+        repoUrl: "https://github.com/dustin-nguyen",
       },
       {
-        id: "proj-3",
-        title: "DevPortfolio Generator",
-        description: "A CLI tool that helps developers generate a static portfolio site from a JSON configuration file.",
-        imageUrl: "assets/project-3.jpg", 
-        technologies: ["Node.js", "Ink", "Chalk"],
-        repoUrl: "https://github.com"
+        id: "proj-parking-system",
+        title: "Blockchain and Docker Assisted Secure Automated Parking Garage System",
+        description:
+          "Developed a secure parking system with license plate recognition, combination parking, and blockchain for transactional integrity using MERN stack, Python, and SQLite.",
+        imageUrl: "assets/projects/blockchain_parking.png",
+        technologies: ["MERN", "Python", "SQLite", "Docker", "Blockchain"],
+        repoUrl: "https://github.com/minhluanlqd/Software_Project_G4",
       },
       {
-        id: "proj-4",
-        title: "HealthTracker",
-        description: "Mobile-first web app for tracking daily calorie intake and exercise routines with historical data analysis.",
-        imageUrl: "assets/project-4.jpg", 
-        technologies: ["React Native", "Firebase", "Redux"],
-        demoUrl: "https://example.com"
-      }
+        id: "proj-movie",
+        title: "Movie Recommendation System",
+        description:
+          "Built a scalable movie recommendation system (PySpark, Hadoop, Flask/CherryPy), handling large media metadata sets and focusing on efficient data processing for timely, personalized recommendations.",
+        imageUrl: "assets/projects/movie_rec_sys.png",
+        technologies: ["PySpark", "Hadoop", "Flask"],
+        repoUrl: "https://github.com/dustin-nguyen",
+      },
+      {
+        id: "proj-mast",
+        title: "Mobile Application for Speech Therapy",
+        description:
+          "Created a mobile app using Flutter, Firebase, and ASR/NLP to provide virtual classrooms for teaching kids correct word pronunciation.",
+        imageUrl: "assets/project-mast.jpg",
+        technologies: ["Flutter", "Firebase", "ASR", "NLP"],
+        repoUrl: "https://github.com/dustin-nguyen/MAST",
+      },
+      {
+        id: "proj-learning-gate",
+        title: "Learning Gate",
+        description:
+          "A web-based learning platform for students to access tutorials, courses, and track progress in a structured learning environment.",
+        imageUrl: "assets/project-learning-gate.jpg",
+        technologies: ["React", "Node.js", "MongoDB", "Firebase"],
+        repoUrl: "https://github.com/dustin-nguyen/Learning-Gate",
+      },
+      {
+        id: "proj-buyme",
+        title: "BuyMe",
+        description:
+          "Fabricated an eBay-style platform where users can sell products, purchase items, or join auctions. Built with HTML, CSS, JDBC, and SQL.",
+        imageUrl: "assets/project-buyme.jpg",
+        technologies: ["HTML", "CSS", "JDBC", "SQL"],
+        repoUrl: "https://github.com/dustin-nguyen/Buyme",
+      },
     ]
   },
+
   skills: {
     sectionNumber: "05.",
     title: "Technical Skills",
     categories: [
       {
-        name: "Frontend Core",
-        skills: ["React", "TypeScript", "Next.js", "HTML5/CSS3", "Tailwind CSS"]
+        name: "Languages",
+        skills: ["Kotlin", "Java", "Python", "SQL", "JavaScript", "C++", "C"]
       },
       {
-        name: "State & Testing",
-        skills: ["Redux Toolkit", "React Query", "Jest", "Cypress", "Vitest"]
+        name: "Frameworks",
+        skills: ["Android", "Spring", "Quarkus", "TensorFlow", "R2"]
       },
       {
-        name: "Backend & Cloud",
-        skills: ["Node.js", "PostgreSQL", "Firebase", "AWS", "Docker"]
+        name: "Tools",
+        skills: ["AWS", "Git", "Docker", "Jenkins", "GraphQL"]
       },
       {
-        name: "Tools & Design",
-        skills: ["Git", "Figma", "Webpack", "Vite", "CI/CD"]
+        name: "Other",
+        skills: ["Clean Architecture", "CI/CD", "Testing", "System Design", "LLM"]
       }
     ]
   },
+
   contact: {
     sectionNumber: "06.",
     subtitle: "What's Next?",
@@ -194,6 +227,6 @@ export const PROFILE_DATA: ProfileData = {
     description: "I am currently looking for new opportunities. Whether you have a question, a job offer, or just want to say hi, my inbox is always open.",
     buttonText: "Say Hello",
     email: "ducnrg@gmail.com",
-    footerText: "Built with React, TypeScript & Tailwind. Designed & Built by Dustin Nguyen with Google AI studio"
+    footerText: "Built with React, TypeScript & Tailwind. Designed & Built by Duc Nguyen"
   }
 };
