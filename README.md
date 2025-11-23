@@ -68,6 +68,9 @@ Tailwind CSS is used for styling. Configuration is embedded in `index.html` for 
 ### Automatic Deployment
 Thanks to the GitHub Actions workflow, **every push to the `main` branch automatically builds and deploys the site to GitHub Pages**. No additional steps are required.
 
+> **Note:** Updating files that do not affect the built site (like `README.md`) will trigger the GitHub Actions workflow, but it may not result in a new deployment to GitHub Pages since the `dist` folder hasn’t changed. Only changes affecting your built app will update the live site.
+
+
 ## Manual Deployment
 
 Sometimes you might want to trigger a deployment manually, for example after editing files in `main` without pushing, or if the workflow didn't run automatically.
@@ -91,8 +94,11 @@ GitHub will then build your project and deploy it to GitHub Pages, just like the
 ├── App.tsx           # Main application layout
 ├── index.tsx         # Entry point
 └── index.html        # HTML template
+├── public/ # Static assets (images, favicon, etc.)
+│ └── assets/ # Your custom images, logos, resume PDFs
+├── dist/ # Build output folder (generated after npm run build)
 ```
 
 ---
 
-*Designed & Built by Dustin Nguyen*
+*Designed & Built by Dustin Nguyen with Google AI Studio and lateset chat GPT*
