@@ -21,7 +21,7 @@ export interface EducationItem {
   degree: string;
   period: string;
   location: string;
-  description: string;
+  description: string[];
   logoUrl?: string;
 }
 

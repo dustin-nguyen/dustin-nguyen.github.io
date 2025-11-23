@@ -1,5 +1,4 @@
-
-import { ProfileData } from './types';
+import { ProfileData } from "./types";
 
 // NOTE: To run this on GitHub Pages with local assets:
 // 1. Create a folder named 'assets' inside your 'public' folder (e.g. public/assets).
@@ -9,24 +8,24 @@ import { ProfileData } from './types';
 
 export const PROFILE_DATA: ProfileData = {
   navLinks: [
-    { name: 'About', href: '#about' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Education', href: '#education' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
+    { name: "Education", href: "#education" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
   ],
 
   socials: [
     {
       platform: "GitHub",
       url: "https://github.com/dustin-nguyen",
-      icon: "Github"
+      icon: "Github",
     },
     {
       platform: "LinkedIn",
       url: "https://www.linkedin.com/in/duchn",
-      icon: "Linkedin"
-    }
+      icon: "Linkedin",
+    },
   ],
 
   hero: {
@@ -37,7 +36,7 @@ export const PROFILE_DATA: ProfileData = {
       "I’m an Android developer and software engineer specializing in building high-performance, scalable, and user-centric applications. I’ve contributed to enterprise products used by millions at Walmart Global Tech, BMW of North America, and Hatchando LTD. I focus on clean architectures, app performance optimization, and delivering impactful engineering solutions.",
     resumeUrl: "assets/Duc-Resume.pdf",
     ctaText: "View My Work",
-    heroImageUrl: "assets/hero-profile.jpg"
+    heroImageUrl: "assets/hero-profile.jpg",
   },
 
   about: {
@@ -47,13 +46,19 @@ export const PROFILE_DATA: ProfileData = {
       "I am a software engineer with a deep passion for building scalable web and mobile applications that delight users and improve everyday lives. I blend modern engineering practices with a strong focus on UX/UI design to create software that not only works flawlessly but feels intuitive and natural to use.",
       "I became a software engineer because I want to create tools and applications that make people's lives easier, more productive, and more enjoyable. At Walmart Global Tech, I worked on enterprise Android platforms, optimizing performance, implementing clean modular architecture, and enhancing app stability. I also explored AI-powered automation using tools like n8n and Ollama to streamline workflows and create smarter solutions for real-world problems.",
       "I thrive on challenges that push me to learn and innovate, whether it’s optimizing app performance, designing modular architectures, or exploring cutting-edge AI and cloud technologies. I take pride in crafting software that is reliable, performant, and a joy for users to interact with.",
-      "Here are a few technologies I’ve been exploring and working with recently:"
+      "Here are a few technologies I’ve been exploring and working with recently:",
     ],
     profileImageUrl: "assets/about-profile.jpg",
     recentTechnologies: [
-      "Kotlin", "Android", "LLM", 
-      "Google AI Studio", "n8n", "ollama", "Python", "Flask"
-    ]
+      "Kotlin",
+      "Android",
+      "LLM",
+      "Google AI Studio",
+      "n8n",
+      "ollama",
+      "Python",
+      "Flask",
+    ],
   },
 
   experience: {
@@ -70,10 +75,19 @@ export const PROFILE_DATA: ProfileData = {
           "Instrumental in optimizing memory management to achieve significant app performance gains, reducing crashes by 40% and enhancing responsiveness across diverse Android devices.",
           "Engineered and implemented key aspects of a modular, clean architecture for new app functionalities, contributing to a 20% reduction in development time and improving scalability for features like media integration and AI-driven capabilities.",
           "Actively contributed to establishing comprehensive automated testing protocols, resulting in a 30% decrease in post-release bugs and boosting overall app stability and reliability on a large scale.",
-          "Collaborated closely with UX/UI designers to implement a user-centric new design, which contributed to a 15% improvement in user satisfaction scores and enabled seamless control of app functionalities."
+          "Collaborated closely with UX/UI designers to implement a user-centric new design, which contributed to a 15% improvement in user satisfaction scores and enabled seamless control of app functionalities.",
         ],
-        technologies: ["Kotlin", "Android", "GraphQL", "Clean Architecture", "Testing", "CI/CD", "Automation testing", "R2"],
-        logoUrl: "assets/walmart-logo.svg"
+        technologies: [
+          "Kotlin",
+          "Android",
+          "GraphQL",
+          "Clean Architecture",
+          "Testing",
+          "CI/CD",
+          "Automation testing",
+          "R2",
+        ],
+        logoUrl: "assets/walmart-logo.svg",
       },
       {
         id: "exp-bmw",
@@ -83,10 +97,17 @@ export const PROFILE_DATA: ProfileData = {
         description: [
           "Developed a key back-end system for dealer part requests; transitioned services from Spring MVC to Quarkus, significantly reducing AWS Lambda cold start times by 50%.",
           "Executed migration of mainframe DB2 to Oracle SQL & Salesforce, achieving $50K annual savings in API costs and improving data accessibility.",
-          "Optimized an RPA bot (UiPath) for $500K in operational cost savings; built a monitoring service (Angular, Spring MVC) and implemented CI/CD (Jenkins), enhancing system reliability."
+          "Optimized an RPA bot (UiPath) for $500K in operational cost savings; built a monitoring service (Angular, Spring MVC) and implemented CI/CD (Jenkins), enhancing system reliability.",
         ],
-        technologies: ["Spring MVC", "Quarkus", "Angular", "Oracle SQL", "Salesforce", "UiPath"],
-        logoUrl: "assets/bmw-logo.png"
+        technologies: [
+          "Spring MVC",
+          "Quarkus",
+          "Angular",
+          "Oracle SQL",
+          "Salesforce",
+          "UiPath",
+        ],
+        logoUrl: "assets/bmw-logo.png",
       },
       {
         id: "exp-hatchando",
@@ -94,12 +115,12 @@ export const PROFILE_DATA: ProfileData = {
         role: "Software Engineer Intern",
         period: "May 2021 — Aug 2021",
         description: [
-          "Maintained and enhanced Windows MS SQL database applications, focusing on improving data integrity and system performance for internal tools."
+          "Maintained and enhanced Windows MS SQL database applications, focusing on improving data integrity and system performance for internal tools.",
         ],
         technologies: ["MS SQL", "Windows Apps", "C#"],
-        logoUrl: "assets/hatchando.png"
-      }
-    ]
+        logoUrl: "assets/hatchando.png",
+      },
+    ],
   },
 
   education: {
@@ -112,19 +133,23 @@ export const PROFILE_DATA: ProfileData = {
         degree: "Master of Science in Software Engineering",
         period: "May 2023",
         location: "New Brunswick, NJ",
-        description: "Focused on scalable systems, cloud infrastructure, and software architecture.",
-        logoUrl: "assets/rutgers-logo.png"
+        description:[
+          "Focused on scalable systems, HPC, cloud infrastructure, and software architecture."],
+        logoUrl: "assets/rutgers-logo.png",
       },
       {
         id: "edu-bs",
         school: "Rutgers University",
-        degree: "Bachelor of Science in Computer Engineering",
+        degree: "Bachelor of Science in Computer Engineering (Magna Cum Laude)",
         period: "May 2021",
         location: "New Brunswick, NJ",
-        description: "Coursework included Algorithms, Operating Systems, Databases, and Computer Architecture.",
-        logoUrl: "assets/rutgers-logo.png"
-      }
-    ]
+        description: [
+          "Dean's List (Fall 2019 – Spring 2021).",
+          "Coursework included Algorithms, Operating Systems, Databases, and Computer Architecture.",
+        ],
+        logoUrl: "assets/rutgers-logo.png",
+      },
+    ],
   },
 
   projects: {
@@ -146,12 +171,19 @@ export const PROFILE_DATA: ProfileData = {
         description:
           "Built AI-powered automation workflows using n8n and Ollama to streamline tasks, integrate multiple services, and create smarter, self-learning processes that save time and reduce manual effort.",
         imageUrl: "assets/projects/n8n_ollama.jpg",
-        technologies: ["n8n", "Ollama", "JavaScript", "Node.js", "API Integration"],
+        technologies: [
+          "n8n",
+          "Ollama",
+          "JavaScript",
+          "Node.js",
+          "API Integration",
+        ],
         repoUrl: "https://github.com/dustin-nguyen",
       },
       {
         id: "proj-parking-system",
-        title: "Blockchain and Docker Assisted Secure Automated Parking Garage System",
+        title:
+          "Blockchain and Docker Assisted Secure Automated Parking Garage System",
         description:
           "Developed a secure parking system with license plate recognition, combination parking, and blockchain for transactional integrity using MERN stack, Python, and SQLite.",
         imageUrl: "assets/projects/blockchain_parking.png",
@@ -194,7 +226,7 @@ export const PROFILE_DATA: ProfileData = {
         technologies: ["HTML", "CSS", "JDBC", "SQL"],
         repoUrl: "https://github.com/dustin-nguyen/Buyme",
       },
-    ]
+    ],
   },
 
   skills: {
@@ -203,31 +235,40 @@ export const PROFILE_DATA: ProfileData = {
     categories: [
       {
         name: "Languages",
-        skills: ["Kotlin", "Java", "Python", "SQL", "JavaScript", "C++", "C"]
+        skills: ["Kotlin", "Java", "Python", "SQL", "JavaScript", "C++", "C"],
       },
       {
         name: "Frameworks",
-        skills: ["Android", "Spring", "Quarkus", "TensorFlow", "R2"]
+        skills: ["Android", "Spring", "Quarkus", "TensorFlow", "R2"],
       },
       {
         name: "Tools",
-        skills: ["AWS", "Git", "Docker", "Jenkins", "GraphQL"]
+        skills: ["AWS", "Git", "Docker", "Jenkins", "GraphQL"],
       },
       {
         name: "Other",
-        skills: ["Clean Architecture", "CI/CD", "Testing", "System Design", "LLM"]
-      }
-    ]
+        skills: [
+          "Clean Architecture",
+          "CI/CD",
+          "Testing",
+          "System Design",
+          "LLM",
+        ],
+      },
+    ],
   },
 
   contact: {
     sectionNumber: "06.",
     subtitle: "What's Next?",
     title: "Get In Touch",
-    description: "I am currently looking for new opportunities. Whether you have a question, a job offer, or just want to say hi, my inbox is always open.",
+    description:
+      "I am currently looking for new opportunities. Whether you have a question, a job offer, or just want to say hi, my inbox is always open.",
     buttonText: "Say Hello",
     email: "ducnrg@gmail.com",
-    popupMessage: "Psst… want to say hi? Drop me an email and I’ll respond faster than a coffee kick! ☕🚀 ",
-    footerText: "Built with React, TypeScript & Tailwind. Designed & Built by Duc Nguyen"
-  }
+    popupMessage:
+      "Psst… want to say hi? Drop me an email and I’ll respond faster than a coffee kick! ☕🚀 ",
+    footerText:
+      "Built with React, TypeScript & Tailwind. Designed & Built by Duc Nguyen",
+  },
 };
