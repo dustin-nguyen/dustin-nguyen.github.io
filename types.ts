@@ -35,6 +35,16 @@ export interface ProjectItem {
   demoUrl?: string;
 }
 
+export interface ToolItem {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl?: string;
+  technologies: string[];
+  repoUrl?: string;
+  demoUrl?: string;
+}
+
 export interface SkillCategory {
   name: string;
   skills: string[];
@@ -75,6 +85,12 @@ export interface EducationData {
   items: EducationItem[];
 }
 
+export interface ToolsData {
+  sectionNumber: string;
+  title: string;
+  items: ToolItem[];
+}
+
 export interface ProjectsData {
   sectionNumber: string;
   title: string;
@@ -104,7 +120,8 @@ export interface ProfileData {
   hero: HeroData;
   about: AboutData;
   experience: ExperienceData;
-  education: EducationData; // Added education section
+  education: EducationData; 
+  tools: ToolsData; // Added tools section
   projects: ProjectsData;
   skills: SkillsData;
   contact: ContactData;

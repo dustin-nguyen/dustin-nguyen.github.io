@@ -11,6 +11,7 @@ export const PROFILE_DATA: ProfileData = {
     { name: "About", href: "#about" },
     { name: "Experience", href: "#experience" },
     { name: "Education", href: "#education" },
+    { name: "Tools", href: "#tools" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ],
@@ -133,8 +134,9 @@ export const PROFILE_DATA: ProfileData = {
         degree: "Master of Science in Software Engineering",
         period: "May 2023",
         location: "New Brunswick, NJ",
-        description:[
-          "Focused on scalable systems, HPC, cloud infrastructure, and software architecture."],
+        description: [
+          "Focused on scalable systems, HPC, cloud infrastructure, and software architecture.",
+        ],
         logoUrl: "assets/rutgers-logo.png",
       },
       {
@@ -151,7 +153,41 @@ export const PROFILE_DATA: ProfileData = {
       },
     ],
   },
-
+  tools: {
+    sectionNumber: "04.",
+    title: "Try These Tools ( I built them! )",
+    items: [
+      {
+        id: "tool-1",
+        title: "JSON Formatter",
+        description:
+          "A simple, offline-first tool to format and validate JSON strings. Built for speed and privacy.",
+        imageUrl: "assets/tool-json.jpg",
+        technologies: ["React", "TypeScript", "Ace Editor"],
+        repoUrl: "https://github.com",
+        demoUrl: "https://example.com",
+      },
+      {
+        id: "tool-2",
+        title: "Color Palette Gen",
+        description:
+          "Generate accessible color palettes using AI based on your brand requirements.",
+        imageUrl: "assets/tool-color.jpg",
+        technologies: ["React", "Tailwind", "OpenAI"],
+        repoUrl: "https://github.com",
+        demoUrl: "https://example.com",
+      },
+      {
+        id: "tool-3",
+        title: "Markdown Preview",
+        description:
+          "Real-time markdown previewer with GFM support and custom export options.",
+        imageUrl: "assets/tool-markdown.jpg",
+        technologies: ["React", "Remark", "Vite"],
+        repoUrl: "https://github.com",
+      },
+    ],
+  },
   projects: {
     sectionNumber: "04.",
     title: "Some Things I've Built",
@@ -163,7 +199,7 @@ export const PROFILE_DATA: ProfileData = {
           "Developed an AI recipe generator (Python, Flask, TensorFlow, Hugging Face) processing user input via a web UI; explored efficient model deployment considerations for responsive user-facing applications.",
         imageUrl: "assets/projects/easyChef.jpg",
         technologies: ["Python", "Flask", "TensorFlow", "Hugging Face"],
-        repoUrl: "https://github.com/dustin-nguyen",
+        // repoUrl: "https://github.com/dustin-nguyen",
       },
       {
         id: "proj-n8n-ollama",
@@ -178,7 +214,7 @@ export const PROFILE_DATA: ProfileData = {
           "Node.js",
           "API Integration",
         ],
-        repoUrl: "https://github.com/dustin-nguyen",
+        //  repoUrl: "https://github.com/dustin-nguyen",
       },
       {
         id: "proj-parking-system",
