@@ -8,7 +8,7 @@ const HitsBadge: React.FC = () => {
   const [imageError, setImageError] = useState(false);
   
   // Custom URL for your GitHub Pages
-  const hitsUrl = `https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fdustin-nguyen.github.io&count_bg=%231e293b&title_bg=%230f172a&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=false`;
+  const hitsUrl = `https://hitscounter.dev/api/hit?url=https%3A%2F%2Fdustin-nguyen.github.io%2F&label=Visitors&icon=person-workspace&color=%2305b327&message=&style=for-the-badge&tz=US%2FEastern`;
 
   useEffect(() => {
     setIsMounted(true);

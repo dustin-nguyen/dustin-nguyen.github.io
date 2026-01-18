@@ -3,7 +3,7 @@
 
 A high-performance, accessible, and responsive developer portfolio built with React 19, TypeScript, and Tailwind CSS.
 
-![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fdustin-nguyen.github.io%2F&label=Visitors&icon=person-workspace&color=%2305b327&message=&style=for-the-badge&tz=UTC)
+![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fdustin-nguyen%2Fdustin-nguyen.github.io&label=Visitors&icon=person-workspace&color=%2305b327&message=&style=for-the-badge&tz=US%2FEastern)
 
 ## Features
 
