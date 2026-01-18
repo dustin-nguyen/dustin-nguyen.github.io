@@ -162,7 +162,7 @@ export const PROFILE_DATA: ProfileData = {
         title: "Bank Statement AI Converter",
         description:
           "A modern React application that utilizes Gemini via a managed worker to parse, analyze, and convert PDF bank statements into clean, formatted Excel spreadsheets.",
-        imageUrl: "assets/tools/bank_AI_converter.jpg",
+        imageUrl: "assets/tools/bank_AI_converter.png",
         technologies: ["gemini-2.5-flash", "React", "TypeScript", "Vite", "Tailwind CSS"],
         repoUrl: "https://github.com/dustin-nguyen/bank-statement-to-excel-AI",
         demoUrl: "https://dustin-nguyen.github.io/bank-statement-to-excel-AI/",
