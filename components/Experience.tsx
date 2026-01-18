@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
 import Section from './Section';
 import { PROFILE_DATA } from '../constants';
+import { ExperienceItem } from '../types';
 
-const JobCard = ({ job, index }: { job: typeof PROFILE_DATA.experience.jobs[0], index: number }) => {
+// Define interface for JobCard props to correctly handle React attributes like 'key'
+interface JobCardProps {
+  job: ExperienceItem;
+  index: number;
+}
+
+const JobCard: React.FC<JobCardProps> = ({ job, index }) => {
   const [imgError, setImgError] = useState(false);
 
   return (

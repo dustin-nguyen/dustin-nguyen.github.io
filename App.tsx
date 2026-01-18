@@ -9,6 +9,7 @@ import Tools from './components/Tools';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import HitsBadge from './components/HitsBadge';
 
 const App: React.FC = () => {
   return (
@@ -24,6 +25,9 @@ const App: React.FC = () => {
         <Skills />
         <Contact />
       </main>
+      
+      {/* Floating Widget */}
+      <HitsBadge />
       
       {/* Enhanced Background Elements */}
       <div className="fixed inset-0 w-full h-full pointer-events-none z-0">
