@@ -159,32 +159,13 @@ export const PROFILE_DATA: ProfileData = {
     items: [
       {
         id: "tool-1",
-        title: "JSON Formatter",
+        title: "Bank Statement AI Converter",
         description:
-          "A simple, offline-first tool to format and validate JSON strings. Built for speed and privacy.",
-        imageUrl: "assets/tool-json.jpg",
-        technologies: ["React", "TypeScript", "Ace Editor"],
-        repoUrl: "https://github.com",
-        demoUrl: "https://example.com",
-      },
-      {
-        id: "tool-2",
-        title: "Color Palette Gen",
-        description:
-          "Generate accessible color palettes using AI based on your brand requirements.",
-        imageUrl: "assets/tool-color.jpg",
-        technologies: ["React", "Tailwind", "OpenAI"],
-        repoUrl: "https://github.com",
-        demoUrl: "https://example.com",
-      },
-      {
-        id: "tool-3",
-        title: "Markdown Preview",
-        description:
-          "Real-time markdown previewer with GFM support and custom export options.",
-        imageUrl: "assets/tool-markdown.jpg",
-        technologies: ["React", "Remark", "Vite"],
-        repoUrl: "https://github.com",
+          "A modern React application that utilizes Gemini via a managed worker to parse, analyze, and convert PDF bank statements into clean, formatted Excel spreadsheets.",
+        imageUrl: "assets/tools/bank_AI_converter.jpg",
+        technologies: ["gemini-2.5-flash", "React", "TypeScript", "Vite", "Tailwind CSS"],
+        repoUrl: "https://github.com/dustin-nguyen/bank-statement-to-excel-AI",
+        demoUrl: "https://dustin-nguyen.github.io/bank-statement-to-excel-AI/",
       },
     ],
   },
