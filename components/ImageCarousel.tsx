@@ -10,21 +10,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
-  const [canScroll, setCanScroll] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
-
-  const checkScroll = () => {
-    if (scrollRef.current) {
-      const { scrollWidth, clientWidth } = scrollRef.current;
-      setCanScroll(scrollWidth > clientWidth);
-    }
-  };
-
-  useEffect(() => {
-    checkScroll();
-    window.addEventListener('resize', checkScroll);
-    return () => window.removeEventListener('resize', checkScroll);
-  }, [images]);
 
   const nextImage = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -65,16 +51,21 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   if (!images || images.length === 0) return null;
 
   return (
-    <div className="mt-8 space-y-4 w-full max-w-full overflow-hidden">
+    <div className="mt-8 space-y-4 w-full max-w-full">
       <div className="flex items-center justify-between mb-2">
-        <h4 className="text-sm font-mono text-slate-400 uppercase tracking-widest">UI Screenshots</h4>
+        <h4 className="text-sm font-mono text-slate-400 uppercase tracking-widest">
+          UI Screenshots 
+          <span className="ml-2 text-accent/60 transition-all duration-300">
+            ({currentIndex + 1}/{images.length})
+          </span>
+        </h4>
       </div>
 
       <div className="relative group/carousel w-full">
         {/* Navigation Arrows - Overlayed and Inset */}
-        {canScroll && (
+        {images.length > 1 && (
           <>
-            <div className={`absolute top-1/2 left-2 -translate-y-1/2 z-20 transition-all duration-300 ${currentIndex === 0 ? 'opacity-30 pointer-events-none' : 'opacity-100'}`}>
+            <div className={`absolute top-1/2 left-2 -translate-y-1/2 z-30 transition-all duration-300 ${currentIndex === 0 ? 'opacity-30 pointer-events-none' : 'opacity-100'}`}>
               <button 
                 onClick={prevImage}
                 className="p-3 rounded-full border border-slate-700 bg-slate-900/90 hover:bg-slate-800 hover:text-accent transition-all text-slate-200 shadow-2xl backdrop-blur-sm"
@@ -84,7 +75,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
               </button>
             </div>
             
-            <div className={`absolute top-1/2 right-2 -translate-y-1/2 z-20 transition-all duration-300 ${currentIndex === images.length - 1 ? 'opacity-30 pointer-events-none' : 'opacity-100'}`}>
+            <div className={`absolute top-1/2 right-2 -translate-y-1/2 z-30 transition-all duration-300 ${currentIndex === images.length - 1 ? 'opacity-30 pointer-events-none' : 'opacity-100'}`}>
               <button 
                 onClick={nextImage}
                 className="p-3 rounded-full border border-slate-700 bg-slate-900/90 hover:bg-slate-800 hover:text-accent transition-all text-slate-200 shadow-2xl backdrop-blur-sm"
@@ -99,14 +90,16 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
         {/* Main Carousel View */}
         <div 
           ref={scrollRef}
-          className="flex gap-4 overflow-x-auto hide-scrollbar snap-x snap-mandatory pb-4 select-none w-full relative px-10 md:px-16"
+          className="flex gap-6 overflow-x-auto hide-scrollbar snap-x snap-mandatory pt-8 pb-12 select-none w-full relative px-10 md:px-16"
         >
           {images.map((img, idx) => (
             <motion.div
               key={idx}
               layoutId={`img-${idx}`}
-              className={`relative flex-none w-48 md:w-56 aspect-[9/16] rounded-xl overflow-hidden cursor-pointer border-2 transition-all duration-300 snap-center group/item ${
-                currentIndex === idx ? 'border-accent shadow-lg shadow-accent/20' : 'border-slate-800'
+              className={`relative flex-none w-48 md:w-56 aspect-[9/16] rounded-xl overflow-hidden cursor-pointer border-2 transition-all duration-500 snap-center group/item ${
+                currentIndex === idx 
+                  ? 'border-accent ring-8 ring-accent/10 shadow-[0_0_30px_rgba(56,189,248,0.5)] scale-[1.04] z-10' 
+                  : 'border-slate-800 opacity-60 grayscale-[0.3] hover:opacity-100 hover:grayscale-0'
               }`}
               onClick={() => {
                 setCurrentIndex(idx);
@@ -119,6 +112,16 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
+              
+              {/* Active Indicator Badge */}
+              {currentIndex === idx && (
+                <div className="absolute top-3 left-3 z-20">
+                  <span className="bg-accent text-primary text-[10px] font-bold px-2 py-0.5 rounded-full shadow-lg animate-pulse">
+                    ACTIVE
+                  </span>
+                </div>
+              )}
+
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/item:opacity-100 transition-opacity flex items-center justify-center">
                 <Maximize2 className="text-white" size={24} />
               </div>
