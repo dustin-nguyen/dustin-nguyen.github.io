@@ -89,6 +89,16 @@ export const PROFILE_DATA: ProfileData = {
           "R2",
         ],
         logoUrl: "assets/walmart-logo.svg",
+        screenshots: [
+          "assets/walmart/pickup_exp.png",
+          "assets/walmart/all_seller_grid.png",
+          "assets/walmart/extra_saving_search.png",
+          "assets/walmart/lmp_banner.png",
+          "assets/walmart/lmp_faq.png",
+          "assets/walmart/other_condition_bottomsheet.png",
+          "assets/walmart/seller_carouselv2.png",
+          "assets/walmart/topHighLight.png",
+        ],
       },
       {
         id: "exp-bmw",

@@ -1,5 +1,6 @@
 {
   "name": "Dustin Nguyen Portfolio",
   "description": "A professional, high-performance portfolio website designed to attract hiring managers using React, TypeScript, and Tailwind CSS.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "majorCapabilities": []
 }

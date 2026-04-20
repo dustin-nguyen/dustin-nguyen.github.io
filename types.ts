@@ -13,6 +13,7 @@ export interface ExperienceItem {
   description: string[];
   technologies: string[];
   logoUrl?: string; // Added logo support
+  screenshots?: string[]; // Added screenshots for carousel
 }
 
 export interface EducationItem {

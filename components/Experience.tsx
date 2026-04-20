@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Section from './Section';
 import { PROFILE_DATA } from '../constants';
 import { ExperienceItem } from '../types';
+import ImageCarousel from './ImageCarousel';
 
 // Define interface for JobCard props to correctly handle React attributes like 'key'
 interface JobCardProps {
@@ -45,7 +46,7 @@ const JobCard: React.FC<JobCardProps> = ({ job, index }) => {
           </div>
         </div>
 
-        <div className="flex-grow pt-1">
+        <div className="flex-grow pt-1 min-w-0">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
@@ -81,6 +82,10 @@ const JobCard: React.FC<JobCardProps> = ({ job, index }) => {
                   </span>
                 ))}
               </div>
+            )}
+
+            {job.screenshots && job.screenshots.length > 0 && (
+              <ImageCarousel images={job.screenshots} />
             )}
           </div>
         </div>

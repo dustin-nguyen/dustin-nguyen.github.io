@@ -1,17 +1,16 @@
-import path from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: "./", // IMPORTANT for GitHub Pages
-  server: {
-    port: 3000,
-    host: '0.0.0.0',
-  },
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, '.'),
-    }
+  // This is critical for GitHub Pages. 
+  // It ensures assets are linked relatively (e.g., "assets/logo.png" instead of "/assets/logo.png").
+  // If your repo name is 'portfolio', this allows it to work at https://user.github.io/portfolio/
+  base: './', 
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
   }
 });

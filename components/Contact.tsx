@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
               </p>
               
               <p className="text-lg text-slate-300 leading-relaxed">
-                Want to say hello or collaborate? Email me at <a href={`mailto:${contact.email}`} className="text-accent font-mono hover:underline">{contact.email}</a> to get in touch.
+                Please send an email to <a href={`mailto:${contact.email}`} className="text-accent font-mono hover:underline">{contact.email}</a> to get in touch.
               </p>
               
               <button
