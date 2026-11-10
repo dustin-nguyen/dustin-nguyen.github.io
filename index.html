@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dustin Nguyen | Software Engineer</title>
-    <meta name="description" content="Portfolio of Dustin Nguyen, a Software Engineer specializing in building exceptional digital experiences." />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%2338bdf8%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><polyline points=%2216 18 22 12 16 6%22></polyline><polyline points=%228 6 2 12 8 18%22></polyline></svg>">
+    <meta name="description" content="Duc Nguyen is an Android engineer at Walmart Global Tech focused on app reliability, performance, and faster releases." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23c4f36b%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><polyline points=%2216 18 22 12 16 6%22></polyline><polyline points=%228 6 2 12 8 18%22></polyline></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ['DM Sans', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
               mono: ['Fira Code', 'monospace'],
             },
             colors: {
@@ -67,6 +68,19 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
       }
+      :focus-visible {
+        outline: 2px solid #c4f36b;
+        outline-offset: 4px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto !important; }
+        *, *::before, *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
     </style>
 
   <script type="importmap">
@@ -81,10 +95,10 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="./assets/index-DmpS0fFI.js"></script>
+  <script type="module" crossorigin src="./assets/index-D65vQUF1.js"></script>
 </head>
   <body class="bg-primary text-text antialiased selection:bg-accent selection:text-primary">
     <div id="root"></div>
-    <!-- Main Entry Point for Vite -->
+    <!-- Main Entry Point for Vite -->
   </body>
 </html>
