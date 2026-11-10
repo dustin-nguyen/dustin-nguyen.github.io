@@ -1,71 +1,35 @@
-
-import React, { useState } from 'react';
+import React from 'react';
 import Section from './Section';
 import { PROFILE_DATA } from '../constants';
-import { X } from 'lucide-react';
+import { ArrowUpRight, Mail } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const { contact } = PROFILE_DATA;
-  const [showPopup, setShowPopup] = useState(false);
 
   return (
-    <Section id="contact" className="text-center py-32 relative">
-      <p className="text-accent font-mono mb-4">{contact.sectionNumber} {contact.subtitle}</p>
-      <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">{contact.title}</h2>
-      <p className="max-w-xl mx-auto text-muted text-lg mb-12 leading-relaxed">
-        {contact.description}
-      </p>
-      
-      <button
-        onClick={() => setShowPopup(true)}
-        className="inline-block px-10 py-5 bg-transparent border-2 border-accent text-accent font-semibold rounded hover:bg-accent/10 transition-all hover:scale-105 cursor-pointer"
-      >
-        {contact.buttonText}
-      </button>
-
-      {/* Popup Modal */}
-      {showPopup && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-          {/* Backdrop */}
-          <div 
-            className="absolute inset-0 bg-primary/80 backdrop-blur-sm"
-            onClick={() => setShowPopup(false)}
-          ></div>
-          
-          {/* Modal Content */}
-          <div className="relative bg-secondary border border-slate-700 rounded-xl p-8 max-w-lg w-full shadow-2xl animate-fade-in-up">
-            <button
-              onClick={() => setShowPopup(false)}
-              className="absolute top-4 right-4 text-muted hover:text-accent transition-colors"
-              aria-label="Close popup"
-            >
-              <X size={24} />
-            </button>
-            
-            <div className="text-center pt-2">
-              <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
-              
-              <p className="text-lg text-slate-300 leading-relaxed mb-6">
-                {contact.popupMessage}
-              </p>
-              
-              <p className="text-lg text-slate-300 leading-relaxed">
-                Please send an email to <a href={`mailto:${contact.email}`} className="text-accent font-mono hover:underline">{contact.email}</a> to get in touch.
-              </p>
-              
-              <button
-                onClick={() => setShowPopup(false)}
-                className="mt-8 px-6 py-2 bg-accent text-primary font-bold rounded hover:bg-accent/90 transition-colors"
-              >
-                Close
-              </button>
-            </div>
-          </div>
+    <Section id="contact" className="relative pb-10 pt-24">
+      <div className="relative overflow-hidden border border-white/10 bg-secondary px-7 py-10 sm:px-12 sm:py-14 md:px-16 md:py-20">
+        <div className="absolute right-0 top-0 h-full w-2 bg-accent" aria-hidden="true" />
+        <div className="relative max-w-3xl">
+          <p className="mb-4 text-sm font-medium text-accent">{contact.subtitle}</p>
+          <h2 className="font-display text-4xl font-semibold tracking-[-.05em] text-white sm:text-5xl md:text-6xl">
+            Let’s make Android more dependable.
+          </h2>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
+            I’m open to conversations about Android engineering, app performance, and platform reliability.
+          </p>
+          <a href={`mailto:${contact.email}`} className="mt-8 inline-flex min-h-12 items-center gap-3 rounded-full bg-accent px-6 py-3.5 font-semibold text-primary transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
+            <Mail size={17} aria-hidden="true" />
+            Email Duc
+            <ArrowUpRight size={17} aria-hidden="true" />
+          </a>
+          <p className="mt-4 text-sm text-muted">{contact.email}</p>
         </div>
-      )}
+      </div>
 
-      <footer className="mt-32 text-sm text-slate-500 font-mono">
+      <footer className="mt-8 flex flex-col gap-2 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
         <p>{contact.footerText}</p>
+        <a href="#top" className="w-fit rounded-sm transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent">Back to top</a>
       </footer>
     </Section>
   );

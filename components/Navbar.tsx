@@ -1,6 +1,5 @@
-
-import React, { useState, useEffect } from 'react';
-import { Menu, X, Code } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { Code, Menu, X } from 'lucide-react';
 import { PROFILE_DATA } from '../constants';
 
 const Navbar: React.FC = () => {
@@ -8,83 +7,61 @@ const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => setScrolled(window.scrollY > 32);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleLinkClick = () => {
-    setIsOpen(false);
-  };
+  const closeMenu = () => setIsOpen(false);
+  const navItems = PROFILE_DATA.navLinks.filter(({ name }) => ['Experience', 'Projects', 'About'].includes(name));
 
   return (
-    <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-primary/90 backdrop-blur-md shadow-lg py-4' : 'bg-transparent py-6'
-      }`}
-    >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        {/* Logo */}
-        <a href="#" className="flex items-center space-x-2 group">
-          <div className="p-2 bg-accent/10 rounded-lg group-hover:bg-accent/20 transition-colors">
-            <Code className="text-accent h-6 w-6" />
-          </div>
-          <span className="font-bold text-xl tracking-tight text-white">Dustin.dev</span>
+    <nav className={`fixed top-0 z-50 w-full border-b border-white/10 transition-colors duration-300 ${scrolled ? 'bg-primary/95 backdrop-blur-md' : 'bg-primary/75 backdrop-blur-sm'}`} aria-label="Main navigation">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
+        <a href="#top" className="group flex items-center gap-3 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent" onClick={closeMenu}>
+          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent text-primary transition-transform group-hover:-rotate-6">
+            <Code size={22} aria-hidden="true" />
+          </span>
+          <span className="font-display text-lg font-semibold tracking-tight text-white">Duc Nguyen</span>
         </a>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-8">
-          {PROFILE_DATA.navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-text hover:text-accent transition-colors"
-            >
+        <div className="hidden items-center gap-7 md:flex">
+          {navItems.map((link) => (
+            <a key={link.name} href={link.href} className="text-sm font-medium text-muted transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
               {link.name}
             </a>
           ))}
-          <a
-            href={PROFILE_DATA.hero.resumeUrl}
-            className="px-4 py-2 text-sm font-medium text-accent border border-accent rounded hover:bg-accent/10 transition-colors"
-          >
+          <a href={PROFILE_DATA.hero.resumeUrl} className="text-sm font-medium text-muted transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
             Resume
+          </a>
+          <a href={`mailto:${PROFILE_DATA.contact.email}`} className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
+            Contact
           </a>
         </div>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-text hover:text-accent transition-colors p-2"
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-white transition-colors hover:border-accent hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent md:hidden"
+          aria-label={isOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
+        >
+          {isOpen ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
+        </button>
       </div>
 
-      {/* Mobile Nav Overlay */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-secondary shadow-xl border-t border-slate-700">
-          <div className="flex flex-col p-4 space-y-4">
+        <div id="mobile-navigation" className="border-t border-white/10 bg-primary px-6 py-4 shadow-xl md:hidden">
+          <div className="mx-auto flex max-w-6xl flex-col">
             {PROFILE_DATA.navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={handleLinkClick}
-                className="text-base font-medium text-text hover:text-accent block py-2"
-              >
+              <a key={link.name} href={link.href} onClick={closeMenu} className="border-b border-white/10 py-3 text-base font-medium text-white transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent">
                 {link.name}
               </a>
             ))}
-            <a
-              href={PROFILE_DATA.hero.resumeUrl}
-              className="text-base font-medium text-accent block py-2"
-            >
-              Resume
-            </a>
+            <a href={PROFILE_DATA.hero.resumeUrl} onClick={closeMenu} className="border-b border-white/10 py-3 text-base font-medium text-white transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent">Resume</a>
+            <a href={`mailto:${PROFILE_DATA.contact.email}`} onClick={closeMenu} className="mt-4 rounded-full bg-accent px-5 py-3 text-center font-semibold text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Email Duc</a>
           </div>
         </div>
       )}
