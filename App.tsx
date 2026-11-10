@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import ImpactStrip from './components/ImpactStrip';
 import About from './components/About';
 import Experience from './components/Experience';
 import Education from './components/Education';
@@ -16,6 +17,7 @@ const App: React.FC = () => {
       <Navbar />
       <main className="flex flex-col w-full z-10 relative">
         <Hero />
+        <ImpactStrip />
         <About />
         <Experience />
         <Education />
