@@ -72,6 +72,19 @@
         outline: 2px solid #c4f36b;
         outline-offset: 4px;
       }
+
+      /* Hero gradient orb animations */
+      .hero-gradient-orb {
+        animation: orbFloat 12s ease-in-out infinite;
+      }
+      .hero-gradient-orb-delayed {
+        animation: orbFloat 15s ease-in-out infinite reverse;
+      }
+      @keyframes orbFloat {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        33% { transform: translate(20px, -15px) scale(1.05); }
+        66% { transform: translate(-10px, 10px) scale(0.95); }
+      }
       @media (prefers-reduced-motion: reduce) {
         html { scroll-behavior: auto !important; }
         *, *::before, *::after {
@@ -95,10 +108,10 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="./assets/index-C-vA5ZRv.js"></script>
+  <script type="module" crossorigin src="./assets/index-Cq5ixdXI.js"></script>
 </head>
   <body class="bg-primary text-text antialiased selection:bg-accent selection:text-primary">
     <div id="root"></div>
-    <!-- Main Entry Point for Vite -->
+    <!-- Main Entry Point for Vite -->
   </body>
 </html>
