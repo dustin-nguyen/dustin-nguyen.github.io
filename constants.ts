@@ -180,7 +180,7 @@ export const PROFILE_DATA: ProfileData = {
     ],
   },
   projects: {
-    sectionNumber: "04.",
+    sectionNumber: "05.",
     title: "Some Things I've Built",
     items: [
       {
@@ -257,7 +257,7 @@ export const PROFILE_DATA: ProfileData = {
   },
 
   skills: {
-    sectionNumber: "05.",
+    sectionNumber: "06.",
     title: "Technical Skills",
     categories: [
       {
@@ -286,7 +286,7 @@ export const PROFILE_DATA: ProfileData = {
   },
 
   contact: {
-    sectionNumber: "06.",
+    sectionNumber: "07.",
     subtitle: "What's Next?",
     title: "Get In Touch",
     description:
