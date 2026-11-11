@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
         <div className="hidden items-center gap-7 md:flex">
           {navItems.map((link) => (
             <a key={link.name} href={link.href} className="text-sm font-medium text-muted transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
-              {link.name}
+              {link.name === 'Experience' ? 'Work' : link.name}
             </a>
           ))}
           <a href={PROFILE_DATA.hero.resumeUrl} className="text-sm font-medium text-muted transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
           <div className="mx-auto flex max-w-6xl flex-col">
             {PROFILE_DATA.navLinks.map((link) => (
               <a key={link.name} href={link.href} onClick={closeMenu} className="border-b border-white/10 py-3 text-base font-medium text-white transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent">
-                {link.name}
+                {link.name === 'Experience' ? 'Work' : link.name}
               </a>
             ))}
             <a href={PROFILE_DATA.hero.resumeUrl} onClick={closeMenu} className="border-b border-white/10 py-3 text-base font-medium text-white transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent">Resume</a>
