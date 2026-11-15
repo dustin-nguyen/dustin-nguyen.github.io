@@ -4,9 +4,9 @@ import { ArrowDownRight, Download, Github, Linkedin, MoveUpRight } from 'lucide-
 import { PROFILE_DATA } from '../constants';
 
 const releaseSignals = [
-  { value: '40%', label: 'fewer app crashes' },
-  { value: '20%', label: 'less development time' },
-  { value: '30%', label: 'fewer post-release bugs' },
+  { value: '3 pages', label: 'reuse seller discovery' },
+  { value: '4 pages', label: 'use the landing banner' },
+  { value: '45 min', label: 'saved per CI job' },
 ];
 
 const Hero: React.FC = () => {
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="max-w-3xl text-balance font-display text-[clamp(3.4rem,7vw,6rem)] font-semibold leading-[.94] tracking-[-.04em] text-white"
             >
-              Make the next Android release safer.
+              Android marketplace, built to scale.
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.25 }}
               className="mt-7 max-w-lg text-lg leading-relaxed text-muted md:text-xl"
             >
-              I help product teams ship Android that stays fast, stable, and maintainable after launch. I build at Walmart Global Tech.
+              I build Walmart marketplace features in Kotlin, Java, and GraphQL. Earlier, I worked on backend systems and automation at BMW.
             </motion.p>
 
             <motion.div
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
                 <MoveUpRight size={18} aria-hidden="true" />
               </a>
               <a href="#impact" className="inline-flex min-h-12 items-center gap-3 rounded-full border border-white/20 px-6 py-3.5 font-semibold text-white transition-colors hover:border-accent hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
-                See the production results
+                See the work behind the numbers
                 <ArrowDownRight size={18} aria-hidden="true" />
               </a>
             </motion.div>
@@ -86,7 +86,7 @@ const Hero: React.FC = () => {
               {hero.heroImageUrl && <img src={hero.heroImageUrl} alt="Duc Nguyen" className="h-full w-full object-cover object-top" />}
               <div className="absolute inset-x-0 bottom-0 border-t border-white/15 bg-primary/95 px-5 py-4 backdrop-blur-sm">
                 <div className="flex items-center justify-between gap-4">
-                  <h2 className="font-display text-lg font-semibold tracking-[-.02em] text-white">Release health</h2>
+                  <h2 className="font-display text-lg font-semibold tracking-[-.02em] text-white">Marketplace work</h2>
                   <span className="text-xs font-medium text-accent">Walmart Global Tech</span>
                 </div>
                 <dl className="mt-4 grid grid-cols-3 divide-x divide-white/15">
@@ -109,8 +109,8 @@ const Hero: React.FC = () => {
             </div>
             <div className="relative mt-5 flex items-start justify-between gap-4 border-t border-white/15 pt-4 text-sm">
               <div>
-                <p className="font-semibold text-white">Available for the hard parts</p>
-                <p className="mt-1 text-muted">Performance · Stability · Architecture</p>
+                <p className="font-semibold text-white">Android engineer at Walmart</p>
+                <p className="mt-1 text-muted">Marketplace · Performance · Testing</p>
               </div>
               <a href={hero.resumeUrl} aria-label="Download Duc's resume" className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent text-primary transition-all hover:bg-white hover:shadow-[0_10px_20px_rgba(196,243,107,0.3)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
                 <Download size={18} aria-hidden="true" />

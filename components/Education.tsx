@@ -57,16 +57,18 @@ const Education: React.FC = () => {
                     </div>
                   </div>
                   
-                  <div className="mt-4 pt-4 border-t border-slate-700/50">
-                     <ul className="space-y-2">
-                      {item.description.map((desc, idx) => (
-                        <li key={idx} className="flex items-start text-muted text-base leading-relaxed">
-                          <span className="text-accent mr-2 mt-1.5 text-xs">▹</span>
-                          <span>{desc}</span>
-                        </li>
-                      ))}
-                     </ul>
-                  </div>
+                  {item.description.length > 0 && (
+                    <div className="mt-4 pt-4 border-t border-slate-700/50">
+                      <ul className="space-y-2">
+                        {item.description.map((desc, idx) => (
+                          <li key={idx} className="flex items-start text-muted text-base leading-relaxed">
+                            <span className="text-accent mr-2 mt-1.5 text-xs">▹</span>
+                            <span>{desc}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

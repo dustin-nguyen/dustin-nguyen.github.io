@@ -15,10 +15,10 @@ const Contact: React.FC = () => {
           <div className="relative max-w-3xl">
             <p className="mb-4 text-sm font-medium text-accent">{contact.subtitle}</p>
             <h2 className="font-display text-4xl font-semibold tracking-[-.05em] text-white sm:text-5xl md:text-6xl">
-              Let's make Android more dependable.
+              Let's build better Android experiences.
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
-              I'm open to conversations about Android engineering, app performance, and platform reliability.
+              I'm open to conversations about Android development, marketplace features, app stability, and engineering teams.
             </p>
             <a href={`mailto:${contact.email}`} className="mt-8 inline-flex min-h-12 items-center gap-3 rounded-full bg-accent px-6 py-3.5 font-semibold text-primary transition-all hover:bg-white hover:shadow-[0_0_30px_rgba(196,243,107,0.2)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
               <Mail size={17} aria-hidden="true" />

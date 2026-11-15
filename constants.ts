@@ -34,7 +34,7 @@ export const PROFILE_DATA: ProfileData = {
     name: "Duc Nguyen",
     tagline: "Android Developer & Software Engineer",
     description:
-      "I’m an Android developer and software engineer specializing in building high-performance, scalable, and user-centric applications. I’ve contributed to enterprise products used by millions at Walmart Global Tech, BMW of North America, and Hatchando LTD. I focus on clean architectures, app performance optimization, and delivering impactful engineering solutions.",
+      "I build Android marketplace features at Walmart Global Tech. Earlier, I worked on backend services, data migration, and automation at BMW of North America.",
     resumeUrl: "assets/Duc-Resume.pdf",
     ctaText: "View My Work",
     heroImageUrl: "assets/hero-profile.jpg",
@@ -44,49 +44,57 @@ export const PROFILE_DATA: ProfileData = {
     sectionNumber: "01.",
     title: "About Me",
     paragraphs: [
-      "I am a software engineer with a deep passion for building scalable web and mobile applications that delight users and improve everyday lives. I blend modern engineering practices with a strong focus on UX/UI design to create software that not only works flawlessly but feels intuitive and natural to use.",
-      "I became a software engineer because I want to create tools and applications that make people's lives easier, more productive, and more enjoyable. At Walmart Global Tech, I worked on enterprise Android platforms, optimizing performance, implementing clean modular architecture, and enhancing app stability. I also explored AI-powered automation using tools like n8n and Ollama to streamline workflows and create smarter solutions for real-world problems.",
-      "I thrive on challenges that push me to learn and innovate, whether it’s optimizing app performance, designing modular architectures, or exploring cutting-edge AI and cloud technologies. I take pride in crafting software that is reliable, performant, and a joy for users to interact with.",
-      "Here are a few technologies I’ve been exploring and working with recently:",
+      "I build Android marketplace features at Walmart Global Tech with Kotlin, Java, and GraphQL. My work includes seller discovery, fulfillment options, and product details across multiple pages.",
+      "I also work on app stability and the tools that help teams ship. I use Android Profiler and LeakCanary to find memory and lifecycle issues, and I cut about 45 minutes from each YAML UI automation CI job by sharding and trimming tests.",
+      "Before Walmart, I worked on backend services, database migration, automation, and monitoring at BMW of North America. I have a master's degree in software engineering from Rutgers University.",
+      "Tools I use:",
     ],
     profileImageUrl: "assets/about-profile.jpg",
     recentTechnologies: [
       "Kotlin",
       "Android",
-      "LLM",
-      "Google AI Studio",
-      "n8n",
-      "ollama",
-      "Python",
-      "Flask",
+      "Java",
+      "GraphQL",
+      "MVVM",
+      "Gradle",
+      "JUnit",
+      "LeakCanary",
+      "Jenkins",
     ],
   },
 
   experience: {
     sectionNumber: "02.",
-    title: "Where I've Worked",
+    title: "Experience",
     jobs: [
       {
         id: "exp-walmart",
-        company: "Walmart – Global Tech",
+        company: "Walmart Global Tech",
         role: "Android Developer",
-        period: "Dec 2023 — Present",
+        period: "Dec 2023 to present",
         description: [
-          "Played a key role in developing Walmart's high-traffic local marketplace platform (Kotlin, Java, GraphQL), contributing to complex feature integration and UX/UI collaboration for an intuitive user experience; this platform is projected for $1B+ annual revenue.",
-          "Instrumental in optimizing memory management to achieve significant app performance gains, reducing crashes by 40% and enhancing responsiveness across diverse Android devices.",
-          "Engineered and implemented key aspects of a modular, clean architecture for new app functionalities, contributing to a 20% reduction in development time and improving scalability for features like media integration and AI-driven capabilities.",
-          "Actively contributed to establishing comprehensive automated testing protocols, resulting in a 30% decrease in post-release bugs and boosting overall app stability and reliability on a large scale.",
-          "Collaborated closely with UX/UI designers to implement a user-centric new design, which contributed to a 15% improvement in user satisfaction scores and enabled seamless control of app functionalities.",
+          "Build Walmart marketplace features in Kotlin, Java, and GraphQL with product and UX partners.",
+          "Built the LocalFinds seller carousel and grid with delivery and pickup estimates and category tags. The components are reused across three pages.",
+          "Created a LocalFinds landing-page banner with category navigation, promotions, and an FAQ. Four pages reuse it.",
+          "Implemented LocalFinds fulfillment selection for shipping, pickup, and delivery, including fees, seller details, and return eligibility.",
+          "Added Walmart Resold condition and seller-rating details to product pages, plus a condition-details sheet. Also built a search savings checkbox that applies claimed discounts in the cart.",
+          "Build reusable UI components for a plugin-based, registry-driven server-driven UI, using MVVM and multi-module Gradle.",
+          "Use Android Profiler and LeakCanary to fix memory leaks, image loading, and lifecycle issues. Chunk-load large bottom sheets to prevent crashes while backend pagination is unavailable.",
+          "Stabilized flaky YAML UI tests and cut about 45 minutes from each CI job through sharding and test trimming. Work with JUnit, Sauce Labs, and Jenkins.",
+          "Partner with UX designers, review code, and mentor about three Android engineers, including rotating team members and contractors.",
         ],
         technologies: [
           "Kotlin",
           "Android",
           "GraphQL",
-          "Clean Architecture",
-          "Testing",
-          "CI/CD",
-          "Automation testing",
-          "R2",
+          "MVVM",
+          "Multi-module Gradle",
+          "JUnit",
+          "YAML UI automation",
+          "Sauce Labs",
+          "Jenkins CI",
+          "Android Profiler",
+          "LeakCanary",
         ],
         logoUrl: "assets/walmart-logo.svg",
         screenshots: [
@@ -104,11 +112,11 @@ export const PROFILE_DATA: ProfileData = {
         id: "exp-bmw",
         company: "BMW of North America LLC",
         role: "Software Developer Intern",
-        period: "Sep 2022 — Mar 2023",
+        period: "Sep 2022 to Mar 2023",
         description: [
-          "Developed a key back-end system for dealer part requests; transitioned services from Spring MVC to Quarkus, significantly reducing AWS Lambda cold start times by 50%.",
-          "Executed migration of mainframe DB2 to Oracle SQL & Salesforce, achieving $50K annual savings in API costs and improving data accessibility.",
-          "Optimized an RPA bot (UiPath) for $500K in operational cost savings; built a monitoring service (Angular, Spring MVC) and implemented CI/CD (Jenkins), enhancing system reliability.",
+          "Migrated AWS Lambda services for dealer warranty claims from Spring MVC to Quarkus, reducing cold starts by 50%.",
+          "Migrated a mainframe DB2 database to Oracle SQL and Salesforce. The change saved $50,000 in annual API costs and improved data access.",
+          "Optimized a UiPath bot to save $500,000 in annual labor costs. Built an Angular and Spring MVC monitor for Lambda status and run time, and added Jenkins CI/CD and test coverage reporting.",
         ],
         technologies: [
           "Spring MVC",
@@ -119,17 +127,6 @@ export const PROFILE_DATA: ProfileData = {
           "UiPath",
         ],
         logoUrl: "assets/bmw-logo.png",
-      },
-      {
-        id: "exp-hatchando",
-        company: "HATCHANDO LTD",
-        role: "Software Engineer Intern",
-        period: "May 2021 — Aug 2021",
-        description: [
-          "Maintained and enhanced Windows MS SQL database applications, focusing on improving data integrity and system performance for internal tools.",
-        ],
-        technologies: ["MS SQL", "Windows Apps"],
-        logoUrl: "assets/hatchando.png",
       },
     ],
   },
@@ -144,34 +141,29 @@ export const PROFILE_DATA: ProfileData = {
         degree: "Master of Science in Software Engineering",
         period: "May 2023",
         location: "New Brunswick, NJ",
-        description: [
-          "Focused on scalable systems, HPC, cloud infrastructure, and software architecture.",
-        ],
+        description: [],
         logoUrl: "assets/rutgers-logo.png",
       },
       {
         id: "edu-bs",
         school: "Rutgers University",
-        degree: "Bachelor of Science in Computer Engineering (Magna Cum Laude)",
+        degree: "Bachelor of Science in Computer Engineering",
         period: "May 2021",
         location: "New Brunswick, NJ",
-        description: [
-          "Dean's List (Fall 2019 – Spring 2021).",
-          "Coursework included Algorithms, Operating Systems, Databases, and Computer Architecture.",
-        ],
+        description: [],
         logoUrl: "assets/rutgers-logo.png",
       },
     ],
   },
   tools: {
     sectionNumber: "04.",
-    title: "Try These Tools ( I built them! )",
+    title: "A tool I built",
     items: [
       {
         id: "tool-1",
         title: "Bank Statement AI Converter",
         description:
-          "A modern React application that utilizes Gemini via a managed worker to parse, analyze, and convert PDF bank statements into clean, formatted Excel spreadsheets.",
+          "Upload a bank statement PDF and convert its transactions into a formatted Excel spreadsheet. Built with React, TypeScript, and Gemini.",
         imageUrl: "assets/tools/bank_AI_converter.png",
         technologies: ["gemini-2.5-flash", "React", "TypeScript", "Vite", "Tailwind CSS"],
         repoUrl: "https://github.com/dustin-nguyen/bank-statement-to-excel-AI",
@@ -181,77 +173,25 @@ export const PROFILE_DATA: ProfileData = {
   },
   projects: {
     sectionNumber: "05.",
-    title: "Some Things I've Built",
+    title: "Selected projects",
     items: [
       {
         id: "proj-easychef",
-        title: "EasyChef (AI-Powered Recipe Generator)",
+        title: "EasyChef recipe generator",
         description:
-          "Developed an AI recipe generator (Python, Flask, TensorFlow, Hugging Face) processing user input via a web UI; explored efficient model deployment considerations for responsive user-facing applications.",
+          "Built a web app that generates recipes from user input. Used Python, Flask, TensorFlow, and Hugging Face to explore model deployment for a responsive interface.",
         imageUrl: "assets/projects/easyChef.jpg",
         technologies: ["Python", "Flask", "TensorFlow", "Hugging Face"],
         // repoUrl: "https://github.com/dustin-nguyen",
       },
       {
-        id: "proj-n8n-ollama",
-        title: "AI-Powered Automation with n8n + Ollama",
-        description:
-          "Built AI-powered automation workflows using n8n and Ollama to streamline tasks, integrate multiple services, and create smarter, self-learning processes that save time and reduce manual effort.",
-        imageUrl: "assets/projects/n8n_ollama.jpg",
-        technologies: [
-          "n8n",
-          "Ollama",
-          "JavaScript",
-          "Node.js",
-          "API Integration",
-        ],
-        //  repoUrl: "https://github.com/dustin-nguyen",
-      },
-      {
-        id: "proj-parking-system",
-        title:
-          "Blockchain and Docker Assisted Secure Automated Parking Garage System",
-        description:
-          "Developed a secure parking system with license plate recognition, combination parking, and blockchain for transactional integrity using MERN stack, Python, and SQLite.",
-        imageUrl: "assets/projects/blockchain_parking.png",
-        technologies: ["MERN", "Python", "SQLite", "Docker", "Blockchain"],
-        repoUrl: "https://github.com/minhluanlqd/Software_Project_G4",
-      },
-      {
         id: "proj-movie",
         title: "Movie Recommendation System",
         description:
-          "Built a scalable movie recommendation system (PySpark, Hadoop, Flask/CherryPy), handling large media metadata sets and focusing on efficient data processing for timely, personalized recommendations.",
+          "Built a movie recommendation system that processes large media metadata sets with PySpark, Hadoop, Flask, and CherryPy.",
         imageUrl: "assets/projects/movie_rec_sys.png",
         technologies: ["PySpark", "Hadoop", "Flask"],
         repoUrl: "https://github.com/dustin-nguyen",
-      },
-      {
-        id: "proj-mast",
-        title: "Mobile Application for Speech Therapy",
-        description:
-          "Created a mobile app using Flutter, Firebase, and ASR/NLP to provide virtual classrooms for teaching kids correct word pronunciation.",
-        imageUrl: "assets/project-mast.jpg",
-        technologies: ["Flutter", "Firebase", "ASR", "NLP"],
-        repoUrl: "https://github.com/dustin-nguyen/MAST",
-      },
-      {
-        id: "proj-learning-gate",
-        title: "Learning Gate",
-        description:
-          "A web-based learning platform for students to access tutorials, courses, and track progress in a structured learning environment.",
-        imageUrl: "assets/project-learning-gate.jpg",
-        technologies: ["React", "Node.js", "MongoDB", "Firebase"],
-        repoUrl: "https://github.com/dustin-nguyen/Learning-Gate",
-      },
-      {
-        id: "proj-buyme",
-        title: "BuyMe",
-        description:
-          "Fabricated an eBay-style platform where users can sell products, purchase items, or join auctions. Built with HTML, CSS, JDBC, and SQL.",
-        imageUrl: "assets/project-buyme.jpg",
-        technologies: ["HTML", "CSS", "JDBC", "SQL"],
-        repoUrl: "https://github.com/dustin-nguyen/Buyme",
       },
     ],
   },
@@ -262,24 +202,20 @@ export const PROFILE_DATA: ProfileData = {
     categories: [
       {
         name: "Languages",
-        skills: ["Kotlin", "Java", "Python", "SQL", "JavaScript", "C++", "C"],
+        skills: ["Kotlin", "Java", "Python", "JavaScript", "C++", "C", "Scala", "R"],
       },
       {
-        name: "Frameworks",
-        skills: ["Android", "Spring", "Quarkus", "TensorFlow", "R2"],
+        name: "Mobile and architecture",
+        skills: ["Android SDK", "XML layouts", "Coroutines", "MVVM", "Multi-module Gradle", "Clean architecture", "Server-driven UI", "Plugin-based architecture", "Modularization"],
       },
       {
-        name: "Tools",
-        skills: ["AWS", "Git", "Docker", "Jenkins", "GraphQL"],
+        name: "Backend and frontend",
+        skills: ["Spring MVC", "Quarkus", "Node.js", "Flask", "GraphQL", "Apollo", "React", "Angular", "HTML", "CSS"],
       },
       {
-        name: "Other",
+        name: "Data, cloud, and testing",
         skills: [
-          "Clean Architecture",
-          "CI/CD",
-          "Testing",
-          "System Design",
-          "LLM",
+          "MySQL", "MongoDB", "Firebase", "Oracle SQL", "DB2", "Hadoop", "PySpark", "TensorFlow", "Hugging Face", "AWS Lambda", "AWS S3", "Jenkins", "Git", "GitHub", "Linux", "JUnit 5", "YAML UI automation", "Sauce Labs", "Android Profiler", "LeakCanary",
         ],
       },
     ],
@@ -287,15 +223,13 @@ export const PROFILE_DATA: ProfileData = {
 
   contact: {
     sectionNumber: "07.",
-    subtitle: "What's Next?",
+    subtitle: "Get in touch",
     title: "Get In Touch",
     description:
-      "I am currently looking for new opportunities. Whether you have a question, a job offer, or just want to say hi, my inbox is always open.",
+      "I'm open to conversations about Android development, marketplace features, app stability, and engineering teams.",
     buttonText: "Say Hello",
     email: "ducnrg@gmail.com",
-    popupMessage:
-      "Psst… want to say hi? Drop me an email and I’ll respond faster than a coffee kick! ☕🚀 ",
-    footerText:
-      "Built with React, TypeScript & Tailwind. Designed & Built by Duc Nguyen",
+    popupMessage: "Email Duc Nguyen",
+    footerText: "Duc Nguyen | Software engineer",
   },
 };
