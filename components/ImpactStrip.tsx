@@ -54,7 +54,7 @@ const ImpactStrip: React.FC = () => {
   const { ref, isInView } = useInView({ threshold: 0.3 });
 
   return (
-    <section ref={ref} aria-labelledby="impact-title" className="border-y border-white/10 bg-secondary">
+    <section id="impact" ref={ref} aria-labelledby="impact-title" className="border-y border-white/10 bg-secondary">
       <div className="mx-auto grid max-w-6xl gap-8 px-6 py-9 md:grid-cols-[1fr_1.5fr] md:items-center lg:px-8 lg:py-12">
         <CountStat end={outcomes[0].value} label={outcomes[0].label} active={isInView} large />
 
