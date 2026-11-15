@@ -3,6 +3,12 @@ import { motion } from 'motion/react';
 import { ArrowDownRight, Download, Github, Linkedin, MoveUpRight } from 'lucide-react';
 import { PROFILE_DATA } from '../constants';
 
+const releaseSignals = [
+  { value: '40%', label: 'fewer app crashes' },
+  { value: '20%', label: 'less development time' },
+  { value: '30%', label: 'fewer post-release bugs' },
+];
+
 const Hero: React.FC = () => {
   const { hero, socials, contact } = PROFILE_DATA;
 
@@ -78,6 +84,28 @@ const Hero: React.FC = () => {
             <div className="absolute -right-3 top-7 h-[82%] w-[72%] border border-accent/60 sm:-right-5 md:-right-6" aria-hidden="true" />
             <div className="relative aspect-[4/4.5] overflow-hidden border border-white/10 bg-[#e8e8df] shadow-2xl shadow-black/30">
               {hero.heroImageUrl && <img src={hero.heroImageUrl} alt="Duc Nguyen" className="h-full w-full object-cover object-top" />}
+              <div className="absolute inset-x-0 bottom-0 border-t border-white/15 bg-primary/95 px-5 py-4 backdrop-blur-sm">
+                <div className="flex items-center justify-between gap-4">
+                  <h2 className="font-display text-lg font-semibold tracking-[-.02em] text-white">Release health</h2>
+                  <span className="text-xs font-medium text-accent">Walmart Global Tech</span>
+                </div>
+                <dl className="mt-4 grid grid-cols-3 divide-x divide-white/15">
+                  {releaseSignals.map((signal, index) => (
+                    <div key={signal.label} className={index === 0 ? 'pr-3' : index === releaseSignals.length - 1 ? 'pl-3' : 'px-3'}>
+                      <dt className="sr-only">{signal.label}</dt>
+                      <dd className="font-display text-2xl font-semibold leading-none tracking-[-.03em] text-accent sm:text-3xl">{signal.value}</dd>
+                      <p className="mt-2 text-xs leading-snug text-muted">{signal.label}</p>
+                    </div>
+                  ))}
+                </dl>
+                <a
+                  href="#experience"
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-white underline decoration-accent/70 underline-offset-4 transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+                >
+                  Read the engineering work
+                  <ArrowDownRight size={16} aria-hidden="true" />
+                </a>
+              </div>
             </div>
             <div className="relative mt-5 flex items-start justify-between gap-4 border-t border-white/15 pt-4 text-sm">
               <div>
@@ -88,6 +116,7 @@ const Hero: React.FC = () => {
                 <Download size={18} aria-hidden="true" />
               </a>
             </div>
+
           </motion.div>
         </div>
       </div>
