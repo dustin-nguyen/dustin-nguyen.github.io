@@ -20,23 +20,15 @@ export const PROFILE_DATA: ProfileData = {
     {
       platform: "GitHub",
       url: "https://github.com/dustin-nguyen",
-      icon: "Github",
     },
     {
       platform: "LinkedIn",
       url: "https://www.linkedin.com/in/duchn",
-      icon: "Linkedin",
     },
   ],
 
   hero: {
-    greeting: "Hi, my name is",
-    name: "Duc Nguyen",
-    tagline: "Android Developer & Software Engineer",
-    description:
-      "I build Android marketplace features at Walmart Global Tech. Earlier, I worked on backend services, data migration, and automation at BMW of North America.",
     resumeUrl: "assets/Duc-Resume.pdf",
-    ctaText: "View My Work",
     heroImageUrl: "assets/hero-profile.jpg",
   },
 
@@ -222,14 +214,8 @@ export const PROFILE_DATA: ProfileData = {
   },
 
   contact: {
-    sectionNumber: "07.",
     subtitle: "Get in touch",
-    title: "Get In Touch",
-    description:
-      "I'm open to conversations about Android development, marketplace features, app stability, and engineering teams.",
-    buttonText: "Say Hello",
     email: "ducnrg@gmail.com",
-    popupMessage: "Email Duc Nguyen",
     footerText: "Duc Nguyen | Software engineer",
   },
 };

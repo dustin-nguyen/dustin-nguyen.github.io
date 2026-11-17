@@ -2,7 +2,6 @@
 export interface SocialLink {
   platform: string;
   url: string;
-  icon: string; // Lucide icon name
 }
 
 export interface ExperienceItem {
@@ -57,12 +56,7 @@ export interface NavItem {
 }
 
 export interface HeroData {
-  greeting: string;
-  name: string;
-  tagline: string;
-  description: string;
   resumeUrl: string;
-  ctaText: string;
   heroImageUrl?: string; // Added hero image support
 }
 
@@ -105,14 +99,9 @@ export interface SkillsData {
 }
 
 export interface ContactData {
-  sectionNumber: string;
   subtitle: string;
-  title: string;
-  description: string;
-  buttonText: string;
   email: string;
   footerText: string;
-  popupMessage: string;
 }
 
 export interface ProfileData {
