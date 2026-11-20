@@ -33,10 +33,11 @@ export const PROFILE_DATA: ProfileData = {
   },
 
   about: {
-    sectionNumber: "01.",
+    sectionNumber: "",
     title: "About Me",
     paragraphs: [
       "I build Android marketplace features at Walmart Global Tech with Kotlin, Java, and GraphQL. My work includes seller discovery, fulfillment options, and product details across multiple pages.",
+      "In mid-2026 I stepped into an acting tech lead role: managing releases, distributing work, reviewing code, building the team's test automation foundation, and mentoring engineers.",
       "I also work on app stability and the tools that help teams ship. I use Android Profiler and LeakCanary to find memory and lifecycle issues, and I cut about 45 minutes from each YAML UI automation CI job by sharding and trimming tests.",
       "Before Walmart, I worked on backend services, database migration, automation, and monitoring at BMW of North America. I have a master's degree in software engineering from Rutgers University.",
       "Tools I use:",
@@ -56,9 +57,33 @@ export const PROFILE_DATA: ProfileData = {
   },
 
   experience: {
-    sectionNumber: "02.",
+    sectionNumber: "",
     title: "Experience",
     jobs: [
+      {
+        id: "exp-walmart-lead",
+        company: "Walmart Global Tech",
+        role: "Acting Android Tech Lead",
+        period: "Jul 2026 to Nov 2026",
+        badge: "Interim leadership",
+        description: [
+          "Maintained the Android team's codebase, managed tech debt during internal review cycles, signed off on weekly releases, and reviewed about 5–6 pull requests per week as the team's main reviewer.",
+          "Distributed work across two Android developers and estimated story points by reviewing requirements and code and consulting developers on other teams.",
+          "Built the YAML-based UI test automation foundation for a team that had none: defined the project structure and configured CI to run about 50 tests daily with Slack and email reports.",
+          "Stabilized CI by rewriting flaky, timing-out tests and removing unnecessary mocks, logic, and waits.",
+          "Cut YAML automation runtime by about 45 minutes per CI job through sharding and trimming.",
+          "Mentored about three Android engineers, including rotating team members and contractors.",
+        ],
+        technologies: [
+          "Kotlin",
+          "Android",
+          "YAML UI automation",
+          "Jenkins CI",
+          "Sauce Labs",
+          "JUnit",
+        ],
+        logoUrl: "assets/walmart-logo.svg",
+      },
       {
         id: "exp-walmart",
         company: "Walmart Global Tech",
@@ -69,11 +94,10 @@ export const PROFILE_DATA: ProfileData = {
           "Built the LocalFinds seller carousel and grid with delivery and pickup estimates and category tags. The components are reused across three pages.",
           "Created a LocalFinds landing-page banner with category navigation, promotions, and an FAQ. Four pages reuse it.",
           "Implemented LocalFinds fulfillment selection for shipping, pickup, and delivery, including fees, seller details, and return eligibility.",
-          "Added Walmart Resold condition and seller-rating details to product pages, plus a condition-details sheet. Also built a search savings checkbox that applies claimed discounts in the cart.",
+          "Added Walmart Resold condition and seller-rating details to product pages, plus a condition-details sheet. Implemented a search-tile savings checkbox that applies claimed discounts in the cart.",
           "Build reusable UI components for a plugin-based, registry-driven server-driven UI, using MVVM and multi-module Gradle.",
           "Use Android Profiler and LeakCanary to fix memory leaks, image loading, and lifecycle issues. Chunk-load large bottom sheets to prevent crashes while backend pagination is unavailable.",
-          "Stabilized flaky YAML UI tests and cut about 45 minutes from each CI job through sharding and test trimming. Work with JUnit, Sauce Labs, and Jenkins.",
-          "Partner with UX designers, review code, and mentor about three Android engineers, including rotating team members and contractors.",
+          "Partner with UX designers to redesign app screens around user needs.",
         ],
         technologies: [
           "Kotlin",
@@ -81,10 +105,6 @@ export const PROFILE_DATA: ProfileData = {
           "GraphQL",
           "MVVM",
           "Multi-module Gradle",
-          "JUnit",
-          "YAML UI automation",
-          "Sauce Labs",
-          "Jenkins CI",
           "Android Profiler",
           "LeakCanary",
         ],
@@ -124,7 +144,7 @@ export const PROFILE_DATA: ProfileData = {
   },
 
   education: {
-    sectionNumber: "03.",
+    sectionNumber: "",
     title: "Education",
     items: [
       {
@@ -148,7 +168,7 @@ export const PROFILE_DATA: ProfileData = {
     ],
   },
   tools: {
-    sectionNumber: "04.",
+    sectionNumber: "",
     title: "A tool I built",
     items: [
       {
@@ -164,7 +184,7 @@ export const PROFILE_DATA: ProfileData = {
     ],
   },
   projects: {
-    sectionNumber: "05.",
+    sectionNumber: "",
     title: "Selected projects",
     items: [
       {
@@ -189,7 +209,7 @@ export const PROFILE_DATA: ProfileData = {
   },
 
   skills: {
-    sectionNumber: "06.",
+    sectionNumber: "",
     title: "Technical Skills",
     categories: [
       {

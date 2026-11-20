@@ -53,7 +53,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   return (
     <div className="mt-8 space-y-4 w-full max-w-full">
       <div className="flex items-center justify-between mb-2">
-        <h4 className="text-sm font-mono text-slate-400 uppercase tracking-widest">
+        <h4 className="text-sm font-semibold text-slate-400 tracking-wide">
           UI Screenshots 
           <span className="ml-2 text-accent/60 transition-all duration-300">
             ({currentIndex + 1}/{images.length})
@@ -113,14 +113,6 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
                 referrerPolicy="no-referrer"
               />
               
-              {/* Active Indicator Badge */}
-              {currentIndex === idx && (
-                <div className="absolute top-3 left-3 z-20">
-                  <span className="bg-accent text-primary text-[10px] font-bold px-2 py-0.5 rounded-full shadow-lg animate-pulse">
-                    ACTIVE
-                  </span>
-                </div>
-              )}
 
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/item:opacity-100 transition-opacity flex items-center justify-center">
                 <Maximize2 className="text-white" size={24} />
@@ -198,7 +190,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
                 />
               </AnimatePresence>
               
-              <div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 text-white/50 font-mono text-sm">
+              <div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 text-white/50 text-sm">
                 {lightboxIndex + 1} / {images.length}
               </div>
             </motion.div>

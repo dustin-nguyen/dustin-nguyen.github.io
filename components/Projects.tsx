@@ -18,8 +18,8 @@ const Projects: React.FC = () => {
     <Section id="projects">
       <Reveal>
         <div className="flex items-center mb-12">
-          <h2 className="text-3xl font-bold text-white flex items-center">
-            <span className="text-accent mr-2 font-mono text-2xl">{projects.sectionNumber}</span> {projects.title}
+          <h2 className="text-3xl font-bold text-white">
+            {projects.title}
           </h2>
           <div className="h-px bg-slate-700 flex-grow ml-6 max-w-xs"></div>
         </div>
@@ -102,7 +102,7 @@ const Projects: React.FC = () => {
 
                   <ul className="flex flex-wrap gap-2 mt-auto">
                     {project.technologies.map((tech) => (
-                      <li key={tech} className="text-xs font-mono text-accent/80 bg-accent/5 px-2 py-1 rounded">
+                      <li key={tech} className="text-xs font-medium text-accent/80 bg-accent/5 px-2 py-1 rounded">
                         {tech}
                       </li>
                     ))}

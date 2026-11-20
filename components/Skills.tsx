@@ -11,8 +11,8 @@ const Skills: React.FC = () => {
     <Section id="skills" className="bg-secondary/20">
       <Reveal>
         <div className="flex items-center mb-12">
-          <h2 className="text-3xl font-bold text-white flex items-center">
-            <span className="text-accent mr-2 font-mono text-2xl">{skills.sectionNumber}</span> {skills.title}
+          <h2 className="text-3xl font-bold text-white">
+            {skills.title}
           </h2>
           <div className="h-px bg-slate-700 flex-grow ml-6 max-w-xs"></div>
         </div>

@@ -11,8 +11,9 @@ export interface ExperienceItem {
   period: string;
   description: string[];
   technologies: string[];
-  logoUrl?: string; // Added logo support
-  screenshots?: string[]; // Added screenshots for carousel
+  badge?: string;         // e.g. "Interim leadership"
+  logoUrl?: string;
+  screenshots?: string[];
 }
 
 export interface EducationItem {

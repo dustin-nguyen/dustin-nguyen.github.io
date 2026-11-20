@@ -10,8 +10,8 @@ const About: React.FC = () => {
     <Section id="about">
       <Reveal>
         <div className="flex items-center mb-12">
-          <h2 className="text-3xl font-bold text-white flex items-center">
-            <span className="text-accent mr-2 font-mono text-2xl">{about.sectionNumber}</span> {about.title}
+          <h2 className="text-3xl font-bold text-white">
+            {about.title}
           </h2>
           <div className="h-px bg-slate-700 flex-grow ml-6 max-w-xs"></div>
         </div>
@@ -23,7 +23,7 @@ const About: React.FC = () => {
             {about.paragraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
-            <ul className="grid grid-cols-2 gap-2 text-sm font-mono mt-4">
+            <ul className="grid grid-cols-2 gap-2 text-sm mt-4">
                {about.recentTechnologies.map(skill => (
                  <li key={skill} className="flex items-center">
                    <span className="text-accent mr-2">▹</span> {skill}

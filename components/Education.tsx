@@ -11,8 +11,8 @@ const Education: React.FC = () => {
     <Section id="education">
       <Reveal>
         <div className="flex items-center mb-12">
-          <h2 className="text-3xl font-bold text-white flex items-center">
-            <span className="text-accent mr-2 font-mono text-2xl">{education.sectionNumber}</span> {education.title}
+          <h2 className="text-3xl font-bold text-white">
+            {education.title}
           </h2>
           <div className="h-px bg-slate-700 flex-grow ml-6 max-w-xs"></div>
         </div>
@@ -48,7 +48,7 @@ const Education: React.FC = () => {
                       </p>
                     </div>
                     <div className="text-right mt-2 md:mt-0">
-                       <span className="block font-mono text-sm text-accent">
+                      <span className="block text-sm font-semibold text-accent">
                         {item.period}
                       </span>
                       <span className="block text-sm text-muted mt-1">
